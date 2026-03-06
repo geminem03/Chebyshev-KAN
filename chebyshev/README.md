@@ -141,12 +141,12 @@ SUCCESS! All 64 PE outputs match the Hamiltonian Reference.
 
 | Metric | Result |
 |--------|--------|
-| Logic Utilization | 13,471 / 427,200 (3%) |
+| Logic Utilization | 12,815 / 427,200 (3%) |
 | DSP Usage | 64 / 1,518 (4%) |
 | RAM Blocks | 64 M20K |
-| Weight Memory | 32 KB |
-| F_max | 234.85 MHz |
-| Cycles (64 inputs) | 497 |
-| Latency | 2.116 µs |
+| Weight Memory | 262,144 bits = 32KB |
+| F_max | 252.4 MHz |
+| Cycles (64 inputs) | 390 |
+| Latency | 1545 ns |
 
 ---
