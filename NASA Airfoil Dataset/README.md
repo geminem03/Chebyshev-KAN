@@ -15,11 +15,34 @@ NASA datasets are typically governed by underlying low-dimensional physical or t
 
 ## The Three KAN Architectures
 
-To explore the best basis functions for this physical data, we benchmarked three distinct flavors of KANs:
+To ensure this benchmark is an objective, apples-to-apples comparison, it is critical to understand how standard Multi-Layer Perceptrons (MLPs) and Kolmogorov-Arnold Networks (KANs) distribute their trainable parameters. 
 
-* **B-Spline KAN:** Uses piecewise polynomials (B-splines) as its learnable edge functions. B-splines offer excellent local control and adaptability, meaning the network can fine-tune specific segments of the function without globally distorting the rest of the curve.
-* **Chebyshev KAN:** Employs orthogonal Chebyshev polynomials. These are exceptionally good at global approximation and are mathematically robust against Runge's phenomenon (oscillation at the edges of an interval), making them highly stable for smooth, continuous data.
-* **Fourier KAN:** Uses sine and cosine harmonics. This architecture is ideal if the underlying physical telemetry exhibits strong periodic or oscillatory behavior.
+While their internal math differs significantly, every model in this study is evaluated on the exact same task: mapping a 5-dimensional input vector to a 1-dimensional output. The baseline for fairness across all architectures is the **total number of trainable parameters** optimized during backpropagation.
+
+### 1. The Baseline: Multi-Layer Perceptron (MLP)
+In a standard MLP, learnable parameters are strictly defined as the weights on the connecting edges and the biases at each node. 
+* **Mechanism:** An MLP applies a linear transformation (multiplying inputs by weights and adding a bias) followed by a fixed, non-linear activation function (like ReLU or Tanh) applied at the node itself.
+* **Parameter Scaling:** To increase the capacity of an MLP to model complex data, you must either add more neurons to a hidden layer (making it wider) or add more hidden layers (making it deeper). Both actions drastically increase the size of the weight matrices, leading to the parameter explosion seen in our high-accuracy targets.
+
+### 2. B-Spline KAN
+Kolmogorov-Arnold Networks remove fixed activation functions from the nodes and instead place learnable, univariate functions on the edges. In a B-spline KAN, these edge functions are defined by piecewise polynomial curves.
+* **Mechanism:** Every single edge connecting one layer to the next contains a unique B-spline curve. The shape of this curve is determined by a set of control points over a specified grid.
+* **Parameter Scaling:** Instead of learning a single weight scalar per edge like an MLP, a B-spline KAN learns the control point coefficients for the spline on that edge. The number of parameters per edge is dictated by the grid size and the degree of the polynomial ($k$). While each edge holds more parameters than an MLP edge, the network requires drastically fewer nodes and layers to map complex functions.
+
+### 3. Chebyshev KAN
+Instead of localized splines, the Chebyshev KAN parameterizes its edges using orthogonal Chebyshev polynomials. 
+* **Mechanism:** Chebyshev polynomials are mathematically renowned for uniformly approximating complex, continuous functions while avoiding wild oscillations at the boundaries (Runge's phenomenon). Every edge evaluates the input using a series of these polynomials up to a defined degree.
+* **Parameter Scaling:** The learnable parameters are the coefficients of the polynomial terms on each edge. If an edge uses a degree-3 Chebyshev expansion, it learns the coefficients for those specific polynomial degrees. This provides global smoothness and high stability, often allowing this network to converge with incredibly shallow and narrow layer dimensions.
+
+### 4. Fourier KAN
+The Fourier KAN replaces polynomial edge functions with a Fourier series, utilizing sine and cosine harmonics.
+* **Mechanism:** This architecture assumes the underlying data can be effectively decomposed into frequencies. Every edge applies a combination of sine and cosine waves to the input signal.
+* **Parameter Scaling:** The trainable parameters are the amplitude and phase coefficients for each harmonic frequency defined on the edge. By learning these coefficients, the network can perfectly mold itself to cyclical, periodic, or highly oscillatory physical telemetry without needing thousands of dense matrix multiplications.
+
+### Auditor's Note on Fairness
+Because KANs hold multiple parameters per edge (e.g., polynomial coefficients) compared to the MLP's single scalar weight per edge, comparing the models by *node count* or *hidden dimensions* would severely bias the results in favor of the KAN. 
+
+Therefore, our Iso-Accuracy benchmark strictly compares the **total mathematical footprint** (total trainable parameters). Whether a parameter is adjusting a node's bias in an MLP or tweaking a spline's curvature in a KAN, it represents one unit of optimization space. Comparing minimum total parameters to achieve the same accuracy target ensures a purely objective evaluation of architectural efficiency.
 
 ## Methodology: An Apples-to-Apples Comparison
 
