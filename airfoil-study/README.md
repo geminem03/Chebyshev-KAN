@@ -11,9 +11,6 @@ This study utilizes the **NASA Airfoil Self-Noise dataset**, which consists of c
 4. Free-stream velocity (meters per second)
 5. Suction side displacement thickness (meters)
 
-**Why Kolmogorov-Arnold Networks (KANs)?**
-Standard MLPs use fixed activation functions (like ReLU or Sigmoid) at each node and learn a matrix of linear weights. KANs fundamentally flip this architecture: they eliminate fixed node activations and instead place learnable univariate functions directly on the edges of the network. 
-
 The NASA Airfoil dataset is governed by underlying low-dimensional fluid dynamics and acoustic physics. KANs are theoretically uniquely suited for this type of non-linear data because:
 1. **Mathematical Representation:** Their edge-based learnable functions excel at mapping the continuous, non-linear physical relationships inherent in aerodynamic data. 
 2. **Parameter Efficiency:** By adapting the actual shape of the activation functions, KANs can solve complex regression tasks using a fraction of the parameters that a standard MLP would require. 
@@ -30,22 +27,13 @@ In a standard MLP, learnable parameters are strictly defined as the weights on t
 * **Parameter Scaling:** To increase the capacity of an MLP to model complex data, you must either add more neurons to a hidden layer (making it wider) or add more hidden layers (making it deeper). Both actions drastically increase the size of the weight matrices, leading to the parameter explosion seen in our high-accuracy targets.
 
 ### 2. B-Spline KAN (Source: `models/MatrixKan.py`)
-Kolmogorov-Arnold Networks remove fixed activation functions from the nodes and instead place learnable, univariate functions on the edges. In a B-spline KAN, these edge functions are defined by piecewise polynomial curves.
-* **Mechanism:** Every single edge connecting one layer to the next contains a unique B-spline curve. The shape of this curve is determined by a set of control points over a specified grid.
-* **Implementation:** This study utilizes a localized, optimized matrix-based implementation of the original PyKAN framework to speed up the B-spline calculations.
-* **Parameter Scaling:** Instead of learning a single weight scalar per edge like an MLP, a B-spline KAN learns the control point coefficients for the spline on that edge. The number of parameters per edge is dictated by the grid size and the degree of the polynomial. While each edge holds more parameters than an MLP edge, the network requires drastically fewer nodes and layers to map complex functions.
+Instead of standard weights, this model places piecewise polynomial curves (B-splines) on its edges. It learns the control points of these curves over a specified grid, allowing it to dynamically mold to complex functions. This implementation uses a localized, matrix-based approach to accelerate B-spline calculations.
 
 ### 3. Chebyshev KAN (Source: `models/ChebyKANLayer.py`)
-Instead of localized splines, the Chebyshev KAN parameterizes its edges using orthogonal Chebyshev polynomials. 
-* **Mechanism:** Chebyshev polynomials are mathematically renowned for uniformly approximating complex, continuous functions while avoiding wild oscillations at the boundaries (Runge's phenomenon). Every edge evaluates the input using a series of these polynomials up to a defined degree.
-* **Implementation:** Utilizing a custom layer structure, this architecture efficiently computes the recursive Chebyshev polynomials dynamically during the forward pass.
-* **Parameter Scaling:** The learnable parameters are the coefficients of the polynomial terms on each edge. If an edge uses a degree-3 Chebyshev expansion, it learns the coefficients for those specific polynomial degrees. This provides global smoothness and high stability, often allowing this network to converge with incredibly shallow and narrow layer dimensions.
+This architecture replaces localized splines with orthogonal Chebyshev polynomials, which are mathematically renowned for smoothly approximating complex functions without wild edge oscillations. The network learns the coefficients for a series of these polynomials up to a defined degree, providing high stability and global smoothness.
 
 ### 4. Fourier KAN (Source: `models/fftKAN.py`)
-The Fourier KAN replaces polynomial edge functions with a Fourier series, utilizing sine and cosine harmonics.
-* **Mechanism:** This architecture assumes the underlying data can be effectively decomposed into frequencies. Every edge applies a combination of sine and cosine waves to the input signal.
-* **Implementation:** This model uses a `NaiveFourierKANLayer` setup, avoiding complex FFTs in favor of directly computing the parameterized grid frequencies.
-* **Parameter Scaling:** The trainable parameters are the amplitude and phase coefficients for each harmonic frequency defined on the edge. By learning these coefficients, the network can perfectly mold itself to cyclical, periodic, or highly oscillatory physical telemetry without needing thousands of dense matrix multiplications.
+Assuming the underlying data can be decomposed into frequencies, this network places a Fourier series (sine and cosine harmonics) on its edges. By learning the amplitude and phase coefficients for each harmonic, the model can efficiently capture periodic or highly oscillatory physical telemetry.
 
 ### Note on Fairness
 Because KANs hold multiple parameters per edge (e.g., polynomial coefficients) compared to the MLP's single scalar weight per edge, comparing the models by *node count* or *hidden dimensions* would severely bias the results in favor of the KAN. 
@@ -60,9 +48,9 @@ Instead of arbitrarily matching parameter counts (which disadvantages KANs) or m
 
 Because standard MLPs struggled to reach these high-accuracy marks with shallow or small networks, an extended hyperparameter sweep was explicitly required to find an MLP configuration that could successfully hit the targets.
 
-## Iso-Accuracy Results TargetL ~93.5%
+## Iso-Accuracy Results Target: ~93.5%
 
-Below is the breakdown of the most parameter-efficient architectures for each model at a **~93.5%** iso-accuracy targets. At this baseline, the KANs are extremely lightweight, needing fewer than ~500 parameters to hit the target, while the MLP requires over 21,000. 
+Below is the breakdown of the most parameter-efficient architectures for each model at a **~93.5%** iso-accuracy target. At this baseline, the KANs are extremely lightweight, needing fewer than ~500 parameters to hit the target, while the MLP requires over 21,000. 
 
 | Model | Architecture (FC Dims) | Minimum Params | Actual Accuracy | Parameter Reduction vs MLP |
 | :--- | :--- | :--- | :--- | :--- |
@@ -73,3 +61,4 @@ Below is the breakdown of the most parameter-efficient architectures for each mo
 
 
 ### Conclusion
+The results clearly demonstrate that Kolmogorov-Arnold Networks (KANs) offer massive parameter efficiency gains over standard MLPs when modeling complex physical datasets. By leveraging learnable edge functions, the KAN architectures—particularly Chebyshev—were able to achieve the same high predictive accuracy as a deep MLP while using roughly **40 to 55 times fewer parameters**. This proves that for aerodynamic and acoustic regression tasks, replacing deep, dense linear layers with shallow KANs can drastically compress model size without sacrificing performance.
