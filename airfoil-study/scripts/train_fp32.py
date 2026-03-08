@@ -20,7 +20,7 @@ from MatrixKan import MatrixKAN
 # ---------------------------------------------------------
 # 1. Configuration & Model Selection
 # ---------------------------------------------------------
-MODEL_TYPE = 'mlp' # Options: 'chebyshev', 'fourier', 'bspline', 'mlp'
+MODEL_TYPE = 'bspline' # Options: 'chebyshev', 'fourier', 'bspline', 'mlp'
 TARGET_ACCURACY = '93.5' 
 
 EPOCHS = 200

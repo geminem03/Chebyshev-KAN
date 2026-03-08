@@ -1,0 +1,1040 @@
+# Reading pref.tcl
+# do bspline_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Skule_Hardrive/Chebyshev-KAN/bspline {C:/Skule_Hardrive/Chebyshev-KAN/bspline/layer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:55:06 on Mar 07,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Skule_Hardrive/Chebyshev-KAN/bspline" C:/Skule_Hardrive/Chebyshev-KAN/bspline/layer.v 
+# -- Compiling module layer
+# 
+# Top level modules:
+# 	layer
+# End time: 18:55:06 on Mar 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Skule_Hardrive/Chebyshev-KAN/bspline {C:/Skule_Hardrive/Chebyshev-KAN/bspline/bspline_weights.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:55:06 on Mar 07,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Skule_Hardrive/Chebyshev-KAN/bspline" C:/Skule_Hardrive/Chebyshev-KAN/bspline/bspline_weights.v 
+# -- Compiling module bspline_weights
+# 
+# Top level modules:
+# 	bspline_weights
+# End time: 18:55:06 on Mar 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Skule_Hardrive/Chebyshev-KAN/bspline {C:/Skule_Hardrive/Chebyshev-KAN/bspline/bspline_basis.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:55:06 on Mar 07,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Skule_Hardrive/Chebyshev-KAN/bspline" C:/Skule_Hardrive/Chebyshev-KAN/bspline/bspline_basis.v 
+# -- Compiling module bspline_basis
+# 
+# Top level modules:
+# 	bspline_basis
+# End time: 18:55:06 on Mar 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Skule_Hardrive/Chebyshev-KAN/bspline {C:/Skule_Hardrive/Chebyshev-KAN/bspline/pe.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:55:06 on Mar 07,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Skule_Hardrive/Chebyshev-KAN/bspline" C:/Skule_Hardrive/Chebyshev-KAN/bspline/pe.sv 
+# -- Compiling module pe
+# 
+# Top level modules:
+# 	pe
+# End time: 18:55:06 on Mar 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Skule_Hardrive/Chebyshev-KAN/bspline {C:/Skule_Hardrive/Chebyshev-KAN/bspline/pe_column.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:55:06 on Mar 07,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Skule_Hardrive/Chebyshev-KAN/bspline" C:/Skule_Hardrive/Chebyshev-KAN/bspline/pe_column.sv 
+# -- Compiling module pe_column
+# 
+# Top level modules:
+# 	pe_column
+# End time: 18:55:06 on Mar 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+cd ../..
+# reading C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini
+do run_layer.do
+# ** Error: couldn't change working directory to "C:/Skule_Hardrive/Chebyshev-KAN/airfoil-study/bspline": no such file or directory
+# Error in macro ./run_layer.do line 6
+# couldn't change working directory to "C:/Skule_Hardrive/Chebyshev-KAN/airfoil-study/bspline": no such file or directory
+#     while executing
+# "_cd C:/Skule_Hardrive/Chebyshev-KAN/airfoil-study/bspline"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval $cmd"
+#     (procedure "cd" line 22)
+#     invoked from within
+# "cd C:/Skule_Hardrive/Chebyshev-KAN/airfoil-study/bspline"
+do run_layer.do
+# ** Error: couldn't change working directory to "C:Skule_HardriveChebyshev-KANspline": no such file or directory
+# Error in macro ./run_layer.do line 6
+# couldn't change working directory to "C:Skule_HardriveChebyshev-KANspline": no such file or directory
+#     while executing
+# "_cd C:Skule_HardriveChebyshev-KANspline"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval $cmd"
+#     (procedure "cd" line 22)
+#     invoked from within
+# "cd C:\Skule_Hardrive\Chebyshev-KAN\bspline"
+do run_layer.do
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:57:22 on Mar 07,2026
+# vlog -reportprogress 300 C:/intelFPGA/20.1/quartus/eda/sim_lib/altera_mf.v 
+# -- Compiling module lcell
+# -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
+# -- Compiling module ALTERA_MF_HINT_EVALUATION
+# -- Compiling module ALTERA_DEVICE_FAMILIES
+# -- Compiling module dffp
+# -- Compiling module pll_iobuf
+# -- Compiling module stx_m_cntr
+# -- Compiling module stx_n_cntr
+# -- Compiling module stx_scale_cntr
+# -- Compiling module MF_pll_reg
+# -- Compiling module MF_stratix_pll
+# -- Compiling module arm_m_cntr
+# -- Compiling module arm_n_cntr
+# -- Compiling module arm_scale_cntr
+# -- Compiling module MF_stratixii_pll
+# -- Compiling module ttn_m_cntr
+# -- Compiling module ttn_n_cntr
+# -- Compiling module ttn_scale_cntr
+# -- Compiling module MF_stratixiii_pll
+# -- Compiling module cda_m_cntr
+# -- Compiling module cda_n_cntr
+# -- Compiling module cda_scale_cntr
+# -- Compiling module MF_cycloneiii_pll
+# -- Compiling module MF_cycloneiiigl_m_cntr
+# -- Compiling module MF_cycloneiiigl_n_cntr
+# -- Compiling module MF_cycloneiiigl_scale_cntr
+# -- Compiling module cycloneiiigl_post_divider
+# -- Compiling module MF_cycloneiiigl_pll
+# -- Compiling module altpll
+# -- Compiling module altlvds_rx
+# -- Compiling module stratix_lvds_rx
+# -- Compiling module stratixgx_dpa_lvds_rx
+# -- Compiling module stratixii_lvds_rx
+# -- Compiling module flexible_lvds_rx
+# -- Compiling module stratixiii_lvds_rx
+# -- Compiling module stratixiii_lvds_rx_channel
+# -- Compiling module stratixiii_lvds_rx_dpa
+# -- Compiling module altlvds_tx
+# -- Compiling module stratixv_local_clk_divider
+# -- Compiling module stratix_tx_outclk
+# -- Compiling module stratixii_tx_outclk
+# -- Compiling module flexible_lvds_tx
+# -- Compiling module dcfifo_dffpipe
+# -- Compiling module dcfifo_fefifo
+# -- Compiling module dcfifo_async
+# -- Compiling module dcfifo_sync
+# -- Compiling module dcfifo_low_latency
+# -- Compiling module dcfifo_mixed_widths
+# -- Compiling module dcfifo
+# -- Compiling module altera_syncram_derived
+# -- Compiling module altera_syncram_derived_forwarding_logic
+# -- Compiling module altaccumulate
+# -- Compiling module altmult_accum
+# -- Compiling module altmult_add
+# -- Compiling module altfp_mult
+# -- Compiling module altsqrt
+# -- Compiling module altclklock
+# -- Compiling module altddio_in
+# -- Compiling module altddio_out
+# -- Compiling module altddio_bidir
+# -- Compiling module altdpram
+# -- Compiling module altsyncram
+# -- Compiling module altsyncram_body
+# -- Compiling module alt3pram
+# -- Compiling module parallel_add
+# -- Compiling module scfifo
+# -- Compiling module altshift_taps
+# -- Compiling module a_graycounter
+# -- Compiling module altsquare
+# -- Compiling module altera_std_synchronizer
+# -- Compiling module altera_std_synchronizer_bundle
+# -- Compiling module alt_cal
+# -- Compiling module alt_cal_mm
+# -- Compiling module alt_cal_c3gxb
+# -- Compiling module alt_cal_sv
+# -- Compiling module alt_cal_av
+# -- Compiling module alt_aeq_s4
+# -- Compiling module alt_eyemon
+# -- Compiling module alt_dfe
+# -- Compiling module signal_gen
+# -- Compiling module jtag_tap_controller
+# -- Compiling module dummy_hub
+# -- Compiling module sld_virtual_jtag
+# -- Compiling module sld_signaltap
+# -- Compiling module altstratixii_oct
+# -- Compiling module altparallel_flash_loader
+# -- Compiling module altserial_flash_loader
+# -- Compiling module alt_fault_injection
+# -- Compiling module sld_virtual_jtag_basic
+# -- Compiling module altsource_probe
+# 
+# Top level modules:
+# 	lcell
+# 	altpll
+# 	altlvds_rx
+# 	altlvds_tx
+# 	dcfifo
+# 	altaccumulate
+# 	altmult_accum
+# 	altmult_add
+# 	altfp_mult
+# 	altsqrt
+# 	altclklock
+# 	altddio_bidir
+# 	altdpram
+# 	alt3pram
+# 	parallel_add
+# 	scfifo
+# 	altshift_taps
+# 	a_graycounter
+# 	altsquare
+# 	altera_std_synchronizer_bundle
+# 	alt_cal
+# 	alt_cal_mm
+# 	alt_cal_c3gxb
+# 	alt_cal_sv
+# 	alt_cal_av
+# 	alt_aeq_s4
+# 	alt_eyemon
+# 	alt_dfe
+# 	sld_virtual_jtag
+# 	sld_signaltap
+# 	altstratixii_oct
+# 	altparallel_flash_loader
+# 	altserial_flash_loader
+# 	alt_fault_injection
+# 	sld_virtual_jtag_basic
+# 	altsource_probe
+# End time: 18:57:23 on Mar 07,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:57:23 on Mar 07,2026
+# vlog -reportprogress 300 -sv C:/intelFPGA/20.1/quartus/eda/sim_lib/altera_lnsim.sv 
+# -- Compiling package altera_lnsim_functions
+# -- Compiling package altera_generic_pll_functions
+# -- Compiling module generic_pll
+# -- Importing package altera_lnsim_functions
+# -- Importing package altera_generic_pll_functions
+# -- Compiling module generic_cdr
+# -- Compiling module common_28nm_ram_pulse_generator
+# -- Compiling module common_28nm_ram_register
+# -- Compiling module common_28nm_ram_block
+# -- Compiling module generic_m20k
+# -- Compiling module generic_m10k
+# -- Compiling module common_28nm_mlab_cell_pulse_generator
+# -- Compiling module common_28nm_mlab_latch
+# -- Compiling module common_28nm_mlab_cell_core
+# -- Compiling module common_porta_latches
+# -- Compiling module generic_28nm_hp_mlab_cell_impl
+# -- Compiling module common_porta_registers
+# -- Compiling module generic_28nm_lc_mlab_cell_impl
+# -- Compiling module common_28nm_lutram_register
+# -- Compiling module generic_14nm_mlab_cell_impl
+# -- Compiling module common_14nm_lutram_register
+# -- Compiling module generic_mux
+# -- Compiling module generic_device_pll
+# -- Compiling module altera_mult_add
+# -- Compiling module altera_mult_add_rtl
+# -- Compiling module ama_signed_extension_function
+# -- Compiling module ama_dynamic_signed_function
+# -- Compiling module ama_register_function
+# -- Compiling module ama_register_with_ext_function
+# -- Compiling module ama_data_split_reg_ext_function
+# -- Compiling module ama_coef_reg_ext_function
+# -- Compiling module ama_adder_function
+# -- Compiling module ama_multiplier_function
+# -- Compiling module ama_preadder_function
+# -- Compiling module ama_chainout_adder_accumulator_function
+# -- Compiling module ama_systolic_adder_function
+# -- Compiling module ama_scanchain
+# -- Compiling module ama_latency_function
+# -- Compiling module altera_pll_reconfig_tasks
+# -- Compiling module altera_syncram
+# -- Compiling module altera_syncram_forwarding_logic
+# -- Compiling module ALTERA_LNSIM_MEMORY_INITIALIZATION
+# -- Compiling module altera_stratixv_pll
+# -- Compiling module altera_arriav_pll
+# -- Compiling module altera_arriavgz_pll
+# -- Compiling module altera_cyclonev_pll
+# -- Compiling module altera_pll
+# -- Compiling module dps_extra_kick
+# -- Compiling module dprio_init
+# -- Compiling module dps_pulse_gen
+# -- Compiling module altera_iopll
+# -- Compiling module dps_pulse_gen_iopll
+# -- Compiling module twentynm_iopll_arlol
+# -- Compiling module fourteennm_altera_iopll
+# -- Compiling module dps_pulse_gen_fourteennm_iopll
+# -- Compiling package fourteennm_iopll_functions
+# -- Compiling module fourteennm_simple_iopll
+# -- Importing package fourteennm_iopll_functions
+# -- Compiling module fourteennm_sub_iopll
+# -- Compiling module twentynm_iopll_ip
+# -- Compiling module altera_iopll_rotation_lcells
+# -- Compiling module altera_pll_dps_lcell_comb
+# -- Compiling module iopll_bootstrap
+# 
+# Top level modules:
+# 	generic_cdr
+# 	generic_m20k
+# 	generic_m10k
+# 	common_porta_latches
+# 	generic_28nm_hp_mlab_cell_impl
+# 	generic_28nm_lc_mlab_cell_impl
+# 	generic_14nm_mlab_cell_impl
+# 	generic_mux
+# 	generic_device_pll
+# 	altera_mult_add
+# 	altera_pll_reconfig_tasks
+# 	altera_syncram
+# 	altera_pll
+# 	altera_iopll
+# 	fourteennm_altera_iopll
+# 	fourteennm_simple_iopll
+# End time: 18:57:24 on Mar 07,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:57:24 on Mar 07,2026
+# vlog -reportprogress 300 bspline_weights.v 
+# -- Compiling module bspline_weights
+# 
+# Top level modules:
+# 	bspline_weights
+# End time: 18:57:24 on Mar 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:57:24 on Mar 07,2026
+# vlog -reportprogress 300 bspline_basis.v 
+# -- Compiling module bspline_basis
+# 
+# Top level modules:
+# 	bspline_basis
+# End time: 18:57:24 on Mar 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:57:24 on Mar 07,2026
+# vlog -reportprogress 300 -sv pe.sv 
+# -- Compiling module pe
+# 
+# Top level modules:
+# 	pe
+# End time: 18:57:24 on Mar 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:57:24 on Mar 07,2026
+# vlog -reportprogress 300 -sv pe_column.sv 
+# -- Compiling module pe_column
+# 
+# Top level modules:
+# 	pe_column
+# End time: 18:57:24 on Mar 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:57:25 on Mar 07,2026
+# vlog -reportprogress 300 layer.v 
+# -- Compiling module layer
+# 
+# Top level modules:
+# 	layer
+# End time: 18:57:25 on Mar 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:57:25 on Mar 07,2026
+# vlog -reportprogress 300 -sv tb_layer.sv 
+# -- Compiling module tb_layer
+# 
+# Top level modules:
+# 	tb_layer
+# End time: 18:57:25 on Mar 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.tb_layer 
+# Start time: 18:57:25 on Mar 07,2026
+# Loading sv_std.std
+# Loading work.tb_layer
+# Loading work.layer
+# Loading work.bspline_basis
+# Loading work.bspline_weights
+# Loading work.pe_column
+# Loading work.pe
+# Loading work.altsyncram
+# Loading work.altera_syncram_derived
+# Loading work.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'weight_ram'.  Expected 23, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/u_pe_column/gen_pe[0]/col_mif/pe_mif/pe_inst/weight_ram File: pe.sv Line: 94
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'wren_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'rden_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'data_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'address_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clock1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken0'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken2'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken3'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'aclr0'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'aclr1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'byteena_a'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'byteena_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'addressstall_a'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'addressstall_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'q_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'weight_ram'.  Expected 23, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/u_pe_column/gen_pe[1]/col_mif/pe_mif/pe_inst/weight_ram File: pe.sv Line: 94
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'wren_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'rden_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'data_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'address_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clock1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken0'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken2'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken3'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'aclr0'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'aclr1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'byteena_a'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'byteena_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'addressstall_a'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'addressstall_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'q_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'weight_ram'.  Expected 23, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/u_pe_column/gen_pe[2]/col_mif/pe_mif/pe_inst/weight_ram File: pe.sv Line: 94
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'wren_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'rden_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'data_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'address_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clock1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken0'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken2'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken3'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'aclr0'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'aclr1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'byteena_a'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'byteena_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'addressstall_a'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'addressstall_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'q_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'weight_ram'.  Expected 23, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/u_pe_column/gen_pe[3]/col_mif/pe_mif/pe_inst/weight_ram File: pe.sv Line: 94
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'wren_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'rden_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'data_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'address_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clock1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken0'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken2'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken3'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'aclr0'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'aclr1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'byteena_a'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'byteena_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'addressstall_a'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'addressstall_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'q_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'weight_ram'.  Expected 23, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/u_pe_column/gen_pe[4]/col_mif/pe_mif/pe_inst/weight_ram File: pe.sv Line: 94
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'wren_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'rden_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'data_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'address_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clock1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken0'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken2'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken3'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'aclr0'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'aclr1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'byteena_a'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'byteena_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'addressstall_a'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'addressstall_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'q_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'weight_ram'.  Expected 23, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/u_pe_column/gen_pe[5]/col_mif/pe_mif/pe_inst/weight_ram File: pe.sv Line: 94
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'wren_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'rden_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'data_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'address_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clock1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken0'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken2'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken3'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'aclr0'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'aclr1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'byteena_a'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'byteena_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'addressstall_a'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'addressstall_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'q_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'weight_ram'.  Expected 23, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/u_pe_column/gen_pe[6]/col_mif/pe_mif/pe_inst/weight_ram File: pe.sv Line: 94
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'wren_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'rden_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'data_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'address_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clock1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken0'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken2'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken3'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'aclr0'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'aclr1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'byteena_a'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'byteena_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'addressstall_a'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'addressstall_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'q_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'eccstatus'.
+# 0
+# 5
+# 2
+# Wave PE selection from NUM_PES=7: 0 1 2 3 4 5 6
+# Warning: Value for read_during_write_mode_port_a of instance is assumed as NEW_DATA_NO_NBE_READ for current INTENDED DEVICE FAMILY Arria 10
+# Time: 0  Instance: tb_layer.dut.u_pe_column.gen_pe[0].col_mif.pe_mif.pe_inst.weight_ram.m_arria10.altera_syncram_inst
+# Warning: Value for read_during_write_mode_port_a of instance is assumed as NEW_DATA_NO_NBE_READ for current INTENDED DEVICE FAMILY Arria 10
+# Time: 0  Instance: tb_layer.dut.u_pe_column.gen_pe[1].col_mif.pe_mif.pe_inst.weight_ram.m_arria10.altera_syncram_inst
+# Warning: Value for read_during_write_mode_port_a of instance is assumed as NEW_DATA_NO_NBE_READ for current INTENDED DEVICE FAMILY Arria 10
+# Time: 0  Instance: tb_layer.dut.u_pe_column.gen_pe[2].col_mif.pe_mif.pe_inst.weight_ram.m_arria10.altera_syncram_inst
+# Warning: Value for read_during_write_mode_port_a of instance is assumed as NEW_DATA_NO_NBE_READ for current INTENDED DEVICE FAMILY Arria 10
+# Time: 0  Instance: tb_layer.dut.u_pe_column.gen_pe[3].col_mif.pe_mif.pe_inst.weight_ram.m_arria10.altera_syncram_inst
+# Warning: Value for read_during_write_mode_port_a of instance is assumed as NEW_DATA_NO_NBE_READ for current INTENDED DEVICE FAMILY Arria 10
+# Time: 0  Instance: tb_layer.dut.u_pe_column.gen_pe[4].col_mif.pe_mif.pe_inst.weight_ram.m_arria10.altera_syncram_inst
+# Warning: Value for read_during_write_mode_port_a of instance is assumed as NEW_DATA_NO_NBE_READ for current INTENDED DEVICE FAMILY Arria 10
+# Time: 0  Instance: tb_layer.dut.u_pe_column.gen_pe[5].col_mif.pe_mif.pe_inst.weight_ram.m_arria10.altera_syncram_inst
+# Warning: Value for read_during_write_mode_port_a of instance is assumed as NEW_DATA_NO_NBE_READ for current INTENDED DEVICE FAMILY Arria 10
+# Time: 0  Instance: tb_layer.dut.u_pe_column.gen_pe[6].col_mif.pe_mif.pe_inst.weight_ram.m_arria10.altera_syncram_inst
+# =========================================================
+#  Starting Layer Testbench
+# =========================================================
+#  Loaded 5 inputs from C:/Skule_Hardrive/Chebyshev-KAN/airfoil-study/experiments/quantization_results/bspline_testcase/testcase_layer_0//layer_inputs_s16.npy
+#  Loaded 7 golden outputs from C:/Skule_Hardrive/Chebyshev-KAN/airfoil-study/experiments/quantization_results/bspline_testcase/testcase_layer_0//matvec_requant_out_s16.npy
+# Time 55000: Sending input[0] = -16053       
+# Time 85000: Sending input[1] = -16384       
+# Time 115000: Sending input[2] = 16384       
+# Time 175000: Sending input[4] = -14739 [LAST]
+# 
+# =========================================================
+#  Checking Requantized Results
+# =========================================================
+# PE[0]: FAIL - Expected: 9071, Got: 0 (full acc: 0)
+# PE[1]: FAIL - Expected: -2917, Got: 0 (full acc: 0)
+# PE[2]: FAIL - Expected: -12513, Got: 0 (full acc: 0)
+# PE[3]: FAIL - Expected: 7081, Got: 0 (full acc: 0)
+# PE[4]: FAIL - Expected: -2442, Got: 0 (full acc: 0)
+# PE[5]: FAIL - Expected: 10492, Got: 0 (full acc: 0)
+# PE[6]: FAIL - Expected: -612, Got: 0 (full acc: 0)
+# 
+# =========================================================
+#  TEST FAILED: 7 errors found.
+# =========================================================
+# ** Note: $finish    : tb_layer.sv(355)
+#    Time: 775 ns  Iteration: 1  Instance: /tb_layer
+# 1
+# Break in Module tb_layer at tb_layer.sv line 355
+do run_layer.do
+# ** Error: Cannot change directory while a simulation is in progress.
+# Use the "quit -sim" command to unload the design first.
+# Error in macro ./run_layer.do line 6
+# Cannot change directory while a simulation is in progress.
+# Use the "quit -sim" command to unload the design first.
+#     while executing
+# "cd C:/Skule_Hardrive/Chebyshev-KAN/bspline"
+quit -sim
+# End time: 18:59:47 on Mar 07,2026, Elapsed time: 0:02:22
+# Errors: 1, Warnings: 126
+do run_layer.do
+# reading modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:59:51 on Mar 07,2026
+# vlog -reportprogress 300 C:/intelFPGA/20.1/quartus/eda/sim_lib/altera_mf.v 
+# -- Compiling module lcell
+# -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
+# -- Compiling module ALTERA_MF_HINT_EVALUATION
+# -- Compiling module ALTERA_DEVICE_FAMILIES
+# -- Compiling module dffp
+# -- Compiling module pll_iobuf
+# -- Compiling module stx_m_cntr
+# -- Compiling module stx_n_cntr
+# -- Compiling module stx_scale_cntr
+# -- Compiling module MF_pll_reg
+# -- Compiling module MF_stratix_pll
+# -- Compiling module arm_m_cntr
+# -- Compiling module arm_n_cntr
+# -- Compiling module arm_scale_cntr
+# -- Compiling module MF_stratixii_pll
+# -- Compiling module ttn_m_cntr
+# -- Compiling module ttn_n_cntr
+# -- Compiling module ttn_scale_cntr
+# -- Compiling module MF_stratixiii_pll
+# -- Compiling module cda_m_cntr
+# -- Compiling module cda_n_cntr
+# -- Compiling module cda_scale_cntr
+# -- Compiling module MF_cycloneiii_pll
+# -- Compiling module MF_cycloneiiigl_m_cntr
+# -- Compiling module MF_cycloneiiigl_n_cntr
+# -- Compiling module MF_cycloneiiigl_scale_cntr
+# -- Compiling module cycloneiiigl_post_divider
+# -- Compiling module MF_cycloneiiigl_pll
+# -- Compiling module altpll
+# -- Compiling module altlvds_rx
+# -- Compiling module stratix_lvds_rx
+# -- Compiling module stratixgx_dpa_lvds_rx
+# -- Compiling module stratixii_lvds_rx
+# -- Compiling module flexible_lvds_rx
+# -- Compiling module stratixiii_lvds_rx
+# -- Compiling module stratixiii_lvds_rx_channel
+# -- Compiling module stratixiii_lvds_rx_dpa
+# -- Compiling module altlvds_tx
+# -- Compiling module stratixv_local_clk_divider
+# -- Compiling module stratix_tx_outclk
+# -- Compiling module stratixii_tx_outclk
+# -- Compiling module flexible_lvds_tx
+# -- Compiling module dcfifo_dffpipe
+# -- Compiling module dcfifo_fefifo
+# -- Compiling module dcfifo_async
+# -- Compiling module dcfifo_sync
+# -- Compiling module dcfifo_low_latency
+# -- Compiling module dcfifo_mixed_widths
+# -- Compiling module dcfifo
+# -- Compiling module altera_syncram_derived
+# -- Compiling module altera_syncram_derived_forwarding_logic
+# -- Compiling module altaccumulate
+# -- Compiling module altmult_accum
+# -- Compiling module altmult_add
+# -- Compiling module altfp_mult
+# -- Compiling module altsqrt
+# -- Compiling module altclklock
+# -- Compiling module altddio_in
+# -- Compiling module altddio_out
+# -- Compiling module altddio_bidir
+# -- Compiling module altdpram
+# -- Compiling module altsyncram
+# -- Compiling module altsyncram_body
+# -- Compiling module alt3pram
+# -- Compiling module parallel_add
+# -- Compiling module scfifo
+# -- Compiling module altshift_taps
+# -- Compiling module a_graycounter
+# -- Compiling module altsquare
+# -- Compiling module altera_std_synchronizer
+# -- Compiling module altera_std_synchronizer_bundle
+# -- Compiling module alt_cal
+# -- Compiling module alt_cal_mm
+# -- Compiling module alt_cal_c3gxb
+# -- Compiling module alt_cal_sv
+# -- Compiling module alt_cal_av
+# -- Compiling module alt_aeq_s4
+# -- Compiling module alt_eyemon
+# -- Compiling module alt_dfe
+# -- Compiling module signal_gen
+# -- Compiling module jtag_tap_controller
+# -- Compiling module dummy_hub
+# -- Compiling module sld_virtual_jtag
+# -- Compiling module sld_signaltap
+# -- Compiling module altstratixii_oct
+# -- Compiling module altparallel_flash_loader
+# -- Compiling module altserial_flash_loader
+# -- Compiling module alt_fault_injection
+# -- Compiling module sld_virtual_jtag_basic
+# -- Compiling module altsource_probe
+# 
+# Top level modules:
+# 	lcell
+# 	altpll
+# 	altlvds_rx
+# 	altlvds_tx
+# 	dcfifo
+# 	altaccumulate
+# 	altmult_accum
+# 	altmult_add
+# 	altfp_mult
+# 	altsqrt
+# 	altclklock
+# 	altddio_bidir
+# 	altdpram
+# 	alt3pram
+# 	parallel_add
+# 	scfifo
+# 	altshift_taps
+# 	a_graycounter
+# 	altsquare
+# 	altera_std_synchronizer_bundle
+# 	alt_cal
+# 	alt_cal_mm
+# 	alt_cal_c3gxb
+# 	alt_cal_sv
+# 	alt_cal_av
+# 	alt_aeq_s4
+# 	alt_eyemon
+# 	alt_dfe
+# 	sld_virtual_jtag
+# 	sld_signaltap
+# 	altstratixii_oct
+# 	altparallel_flash_loader
+# 	altserial_flash_loader
+# 	alt_fault_injection
+# 	sld_virtual_jtag_basic
+# 	altsource_probe
+# End time: 18:59:52 on Mar 07,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:59:52 on Mar 07,2026
+# vlog -reportprogress 300 -sv C:/intelFPGA/20.1/quartus/eda/sim_lib/altera_lnsim.sv 
+# -- Compiling package altera_lnsim_functions
+# -- Compiling package altera_generic_pll_functions
+# -- Compiling module generic_pll
+# -- Importing package altera_lnsim_functions
+# -- Importing package altera_generic_pll_functions
+# -- Compiling module generic_cdr
+# -- Compiling module common_28nm_ram_pulse_generator
+# -- Compiling module common_28nm_ram_register
+# -- Compiling module common_28nm_ram_block
+# -- Compiling module generic_m20k
+# -- Compiling module generic_m10k
+# -- Compiling module common_28nm_mlab_cell_pulse_generator
+# -- Compiling module common_28nm_mlab_latch
+# -- Compiling module common_28nm_mlab_cell_core
+# -- Compiling module common_porta_latches
+# -- Compiling module generic_28nm_hp_mlab_cell_impl
+# -- Compiling module common_porta_registers
+# -- Compiling module generic_28nm_lc_mlab_cell_impl
+# -- Compiling module common_28nm_lutram_register
+# -- Compiling module generic_14nm_mlab_cell_impl
+# -- Compiling module common_14nm_lutram_register
+# -- Compiling module generic_mux
+# -- Compiling module generic_device_pll
+# -- Compiling module altera_mult_add
+# -- Compiling module altera_mult_add_rtl
+# -- Compiling module ama_signed_extension_function
+# -- Compiling module ama_dynamic_signed_function
+# -- Compiling module ama_register_function
+# -- Compiling module ama_register_with_ext_function
+# -- Compiling module ama_data_split_reg_ext_function
+# -- Compiling module ama_coef_reg_ext_function
+# -- Compiling module ama_adder_function
+# -- Compiling module ama_multiplier_function
+# -- Compiling module ama_preadder_function
+# -- Compiling module ama_chainout_adder_accumulator_function
+# -- Compiling module ama_systolic_adder_function
+# -- Compiling module ama_scanchain
+# -- Compiling module ama_latency_function
+# -- Compiling module altera_pll_reconfig_tasks
+# -- Compiling module altera_syncram
+# -- Compiling module altera_syncram_forwarding_logic
+# -- Compiling module ALTERA_LNSIM_MEMORY_INITIALIZATION
+# -- Compiling module altera_stratixv_pll
+# -- Compiling module altera_arriav_pll
+# -- Compiling module altera_arriavgz_pll
+# -- Compiling module altera_cyclonev_pll
+# -- Compiling module altera_pll
+# -- Compiling module dps_extra_kick
+# -- Compiling module dprio_init
+# -- Compiling module dps_pulse_gen
+# -- Compiling module altera_iopll
+# -- Compiling module dps_pulse_gen_iopll
+# -- Compiling module twentynm_iopll_arlol
+# -- Compiling module fourteennm_altera_iopll
+# -- Compiling module dps_pulse_gen_fourteennm_iopll
+# -- Compiling package fourteennm_iopll_functions
+# -- Compiling module fourteennm_simple_iopll
+# -- Importing package fourteennm_iopll_functions
+# -- Compiling module fourteennm_sub_iopll
+# -- Compiling module twentynm_iopll_ip
+# -- Compiling module altera_iopll_rotation_lcells
+# -- Compiling module altera_pll_dps_lcell_comb
+# -- Compiling module iopll_bootstrap
+# 
+# Top level modules:
+# 	generic_cdr
+# 	generic_m20k
+# 	generic_m10k
+# 	common_porta_latches
+# 	generic_28nm_hp_mlab_cell_impl
+# 	generic_28nm_lc_mlab_cell_impl
+# 	generic_14nm_mlab_cell_impl
+# 	generic_mux
+# 	generic_device_pll
+# 	altera_mult_add
+# 	altera_pll_reconfig_tasks
+# 	altera_syncram
+# 	altera_pll
+# 	altera_iopll
+# 	fourteennm_altera_iopll
+# 	fourteennm_simple_iopll
+# End time: 18:59:52 on Mar 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:59:52 on Mar 07,2026
+# vlog -reportprogress 300 bspline_weights.v 
+# -- Compiling module bspline_weights
+# 
+# Top level modules:
+# 	bspline_weights
+# End time: 18:59:52 on Mar 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:59:52 on Mar 07,2026
+# vlog -reportprogress 300 bspline_basis.v 
+# -- Compiling module bspline_basis
+# 
+# Top level modules:
+# 	bspline_basis
+# End time: 18:59:52 on Mar 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:59:53 on Mar 07,2026
+# vlog -reportprogress 300 -sv pe.sv 
+# -- Compiling module pe
+# 
+# Top level modules:
+# 	pe
+# End time: 18:59:53 on Mar 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:59:53 on Mar 07,2026
+# vlog -reportprogress 300 -sv pe_column.sv 
+# -- Compiling module pe_column
+# 
+# Top level modules:
+# 	pe_column
+# End time: 18:59:53 on Mar 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:59:53 on Mar 07,2026
+# vlog -reportprogress 300 layer.v 
+# -- Compiling module layer
+# 
+# Top level modules:
+# 	layer
+# End time: 18:59:53 on Mar 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:59:53 on Mar 07,2026
+# vlog -reportprogress 300 -sv tb_layer.sv 
+# -- Compiling module tb_layer
+# 
+# Top level modules:
+# 	tb_layer
+# End time: 18:59:53 on Mar 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.tb_layer 
+# Start time: 18:59:53 on Mar 07,2026
+# Loading sv_std.std
+# Loading work.tb_layer
+# Loading work.layer
+# Loading work.bspline_basis
+# Loading work.bspline_weights
+# Loading work.pe_column
+# Loading work.pe
+# Loading work.altsyncram
+# Loading work.altera_syncram_derived
+# Loading work.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'weight_ram'.  Expected 23, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/u_pe_column/gen_pe[0]/col_mif/pe_mif/pe_inst/weight_ram File: pe.sv Line: 94
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'wren_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'rden_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'data_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'address_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clock1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken0'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken2'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken3'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'aclr0'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'aclr1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'byteena_a'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'byteena_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'addressstall_a'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'addressstall_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'q_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'weight_ram'.  Expected 23, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/u_pe_column/gen_pe[1]/col_mif/pe_mif/pe_inst/weight_ram File: pe.sv Line: 94
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'wren_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'rden_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'data_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'address_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clock1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken0'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken2'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken3'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'aclr0'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'aclr1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'byteena_a'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'byteena_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'addressstall_a'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'addressstall_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'q_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'weight_ram'.  Expected 23, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/u_pe_column/gen_pe[2]/col_mif/pe_mif/pe_inst/weight_ram File: pe.sv Line: 94
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'wren_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'rden_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'data_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'address_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clock1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken0'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken2'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken3'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'aclr0'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'aclr1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'byteena_a'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'byteena_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'addressstall_a'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'addressstall_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'q_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'weight_ram'.  Expected 23, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/u_pe_column/gen_pe[3]/col_mif/pe_mif/pe_inst/weight_ram File: pe.sv Line: 94
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'wren_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'rden_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'data_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'address_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clock1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken0'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken2'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken3'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'aclr0'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'aclr1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'byteena_a'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'byteena_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'addressstall_a'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'addressstall_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'q_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'weight_ram'.  Expected 23, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/u_pe_column/gen_pe[4]/col_mif/pe_mif/pe_inst/weight_ram File: pe.sv Line: 94
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'wren_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'rden_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'data_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'address_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clock1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken0'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken2'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken3'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'aclr0'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'aclr1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'byteena_a'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'byteena_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'addressstall_a'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'addressstall_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'q_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'weight_ram'.  Expected 23, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/u_pe_column/gen_pe[5]/col_mif/pe_mif/pe_inst/weight_ram File: pe.sv Line: 94
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'wren_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'rden_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'data_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'address_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clock1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken0'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken2'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken3'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'aclr0'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'aclr1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'byteena_a'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'byteena_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'addressstall_a'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'addressstall_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'q_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'weight_ram'.  Expected 23, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/u_pe_column/gen_pe[6]/col_mif/pe_mif/pe_inst/weight_ram File: pe.sv Line: 94
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'wren_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'rden_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'data_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'address_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clock1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken0'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken2'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'clocken3'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'aclr0'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'aclr1'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'byteena_a'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'byteena_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'addressstall_a'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'addressstall_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'q_b'.
+# ** Warning: (vsim-3722) pe.sv(94): [TFMPC] - Missing connection for port 'eccstatus'.
+# 0
+# 5
+# 2
+# Wave PE selection from NUM_PES=7: 0 1 2 3 4 5 6
+# Warning: Value for read_during_write_mode_port_a of instance is assumed as NEW_DATA_NO_NBE_READ for current INTENDED DEVICE FAMILY Arria 10
+# Time: 0  Instance: tb_layer.dut.u_pe_column.gen_pe[0].col_mif.pe_mif.pe_inst.weight_ram.m_arria10.altera_syncram_inst
+# Warning: Value for read_during_write_mode_port_a of instance is assumed as NEW_DATA_NO_NBE_READ for current INTENDED DEVICE FAMILY Arria 10
+# Time: 0  Instance: tb_layer.dut.u_pe_column.gen_pe[1].col_mif.pe_mif.pe_inst.weight_ram.m_arria10.altera_syncram_inst
+# Warning: Value for read_during_write_mode_port_a of instance is assumed as NEW_DATA_NO_NBE_READ for current INTENDED DEVICE FAMILY Arria 10
+# Time: 0  Instance: tb_layer.dut.u_pe_column.gen_pe[2].col_mif.pe_mif.pe_inst.weight_ram.m_arria10.altera_syncram_inst
+# Warning: Value for read_during_write_mode_port_a of instance is assumed as NEW_DATA_NO_NBE_READ for current INTENDED DEVICE FAMILY Arria 10
+# Time: 0  Instance: tb_layer.dut.u_pe_column.gen_pe[3].col_mif.pe_mif.pe_inst.weight_ram.m_arria10.altera_syncram_inst
+# Warning: Value for read_during_write_mode_port_a of instance is assumed as NEW_DATA_NO_NBE_READ for current INTENDED DEVICE FAMILY Arria 10
+# Time: 0  Instance: tb_layer.dut.u_pe_column.gen_pe[4].col_mif.pe_mif.pe_inst.weight_ram.m_arria10.altera_syncram_inst
+# Warning: Value for read_during_write_mode_port_a of instance is assumed as NEW_DATA_NO_NBE_READ for current INTENDED DEVICE FAMILY Arria 10
+# Time: 0  Instance: tb_layer.dut.u_pe_column.gen_pe[5].col_mif.pe_mif.pe_inst.weight_ram.m_arria10.altera_syncram_inst
+# Warning: Value for read_during_write_mode_port_a of instance is assumed as NEW_DATA_NO_NBE_READ for current INTENDED DEVICE FAMILY Arria 10
+# Time: 0  Instance: tb_layer.dut.u_pe_column.gen_pe[6].col_mif.pe_mif.pe_inst.weight_ram.m_arria10.altera_syncram_inst
+# =========================================================
+#  Starting Layer Testbench
+# =========================================================
+#  Loaded 5 inputs from C:/Skule_Hardrive/Chebyshev-KAN/airfoil-study/experiments/quantization_results/bspline_testcase/testcase_layer_0//layer_inputs_s16.npy
+#  Loaded 7 golden outputs from C:/Skule_Hardrive/Chebyshev-KAN/airfoil-study/experiments/quantization_results/bspline_testcase/testcase_layer_0//matvec_requant_out_s16.npy
+# Time 55000: Sending input[0] = -16053       
+# Time 85000: Sending input[1] = -16384       
+# Time 115000: Sending input[2] = 16384       
+# Time 175000: Sending input[4] = -14739 [LAST]
+# 
+# =========================================================
+#  Checking Requantized Results
+# =========================================================
+# PE[0]: FAIL - Expected: 9071, Got: 0 (full acc: 0)
+# PE[1]: FAIL - Expected: -2917, Got: 0 (full acc: 0)
+# PE[2]: FAIL - Expected: -12513, Got: 0 (full acc: 0)
+# PE[3]: FAIL - Expected: 7081, Got: 0 (full acc: 0)
+# PE[4]: FAIL - Expected: -2442, Got: 0 (full acc: 0)
+# PE[5]: FAIL - Expected: 10492, Got: 0 (full acc: 0)
+# PE[6]: FAIL - Expected: -612, Got: 0 (full acc: 0)
+# 
+# =========================================================
+#  TEST FAILED: 7 errors found.
+# =========================================================
+# ** Note: $finish    : tb_layer.sv(355)
+#    Time: 775 ns  Iteration: 1  Instance: /tb_layer
+# 1
+# Break in Module tb_layer at tb_layer.sv line 355
+# End time: 19:05:28 on Mar 07,2026, Elapsed time: 0:05:35
+# Errors: 0, Warnings: 126

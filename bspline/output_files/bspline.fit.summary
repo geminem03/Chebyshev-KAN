@@ -1,0 +1,17 @@
+Fitter Status : Successful - Sat Mar 07 18:42:47 2026
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Standard Edition
+Revision Name : bspline
+Top-level Entity Name : layer
+Family : Arria 10
+Device : 10AS066N3F40E2SG
+Timing Models : Final
+Logic utilization (in ALMs) : 1,044 / 251,680 ( < 1 % )
+Total registers : 2138
+Total pins : 22 / 812 ( 3 % )
+Total virtual pins : 0
+Total block memory bits : 3,472 / 43,642,880 ( < 1 % )
+Total RAM Blocks : 7 / 2,131 ( < 1 % )
+Total DSP Blocks : 11 / 1,687 ( < 1 % )
+Total HSSI RX channels : 0 / 48 ( 0 % )
+Total HSSI TX channels : 0 / 48 ( 0 % )
+Total PLLs : 0 / 96 ( 0 % )

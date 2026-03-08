@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Mar 07 18:39:39 2026
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Standard Edition
+Revision Name : bspline
+Top-level Entity Name : layer
+Family : Arria 10
+Logic utilization (in ALMs) : N/A
+Total registers : 2798
+Total pins : 22
+Total virtual pins : 0
+Total block memory bits : 3,472
+Total DSP Blocks : 11
+Total HSSI RX channels : 0
+Total HSSI TX channels : 0
+Total PLLs : 0
