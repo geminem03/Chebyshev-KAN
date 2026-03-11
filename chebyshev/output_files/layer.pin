@@ -94,7 +94,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : A16       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : A17       :        :                   :         : 3H        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A18       :        :                   :         : 3H        :                
 GND                          : A19       : gnd    :                   :         :           :                
-ready                        : A20       : output : 1.8 V             :         : 2L        : N              
+debug_bit                    : A20       : output : 1.8 V             :         : 2L        : N              
 clk                          : A21       : input  : 1.8 V             :         : 2L        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : A22       :        :                   :         : 2L        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A23       :        :                   :         : 2L        :                
@@ -991,7 +991,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : E19       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : E20       :        :                   :         : 2L        :                
 GND                          : E21       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E22       :        :                   :         : 2L        :                
-debug_bit                    : E23       : output : 1.8 V             :         : 2L        : N              
+ready                        : E23       : output : 1.8 V             :         : 2L        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : E24       :        :                   :         : 2L        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E25       :        :                   :         : 2L        :                
 GND                          : E26       : gnd    :                   :         :           :                

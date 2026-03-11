@@ -1,10 +1,18 @@
 
 State Machine - |layer|state
-Name state.FINISH state.ACCUM_2 state.ACCUM_1 state.COMPUTE state.FETCH state.WAIT_FIRST_QUAD state.IDLE 
-state.IDLE 0 0 0 0 0 0 0 
-state.WAIT_FIRST_QUAD 0 0 0 0 0 1 1 
-state.FETCH 0 0 0 0 1 0 1 
-state.COMPUTE 0 0 0 1 0 0 1 
-state.ACCUM_1 0 0 1 0 0 0 1 
-state.ACCUM_2 0 1 0 0 0 0 1 
-state.FINISH 1 0 0 0 0 0 1 
+Name state.FINISH state.REQUANT state.ACCUM_2 state.ACCUM_1 state.COMPUTE state.FETCH state.WAIT_FIRST_QUAD state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 0 
+state.WAIT_FIRST_QUAD 0 0 0 0 0 0 1 1 
+state.FETCH 0 0 0 0 0 1 0 1 
+state.COMPUTE 0 0 0 0 1 0 0 1 
+state.ACCUM_1 0 0 0 1 0 0 0 1 
+state.ACCUM_2 0 0 1 0 0 0 0 1 
+state.REQUANT 0 1 0 0 0 0 0 1 
+state.FINISH 1 0 0 0 0 0 0 1 
+
+State Machine - |layer|rq_phase
+Name rq_phase.11 rq_phase.10 rq_phase.01 rq_phase.00 
+rq_phase.00 0 0 0 0 
+rq_phase.01 0 0 1 1 
+rq_phase.10 0 1 0 1 
+rq_phase.11 1 0 0 1 

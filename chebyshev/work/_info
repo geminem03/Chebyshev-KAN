@@ -8,27 +8,27 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Skule_Hardrive/kan-tpu/chebyshev
+Z0 dC:/Skule_Hardrive/Chebyshev-KAN/chebyshev
 vlayer
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1772416592
+Z2 !s110 1773235732
 !i10b 1
-!s100 [H6;cV@0V@XI89Vm^<NA<3
+!s100 0gP3^1=gEWXO0V<aNDmlG2
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I2nRDHB;^knhjNAbmWEeg=2
+Ig^4kHYB8Hl5K273TUQdUE0
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1772396938
+w1773234468
 8layer.sv
 Flayer.sv
 !i122 1
-L0 3 175
+L0 18 437
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1772416592.000000
+Z6 !s108 1773235732.000000
 !s107 layer.sv|
 !s90 -reportprogress|300|-sv|layer.sv|
 !i113 1
@@ -38,17 +38,17 @@ vpe_quad
 R1
 R2
 !i10b 1
-!s100 jD:6MRzYI9c3i^B8H6]EA2
+!s100 V32WTDhe<ONVLdZN5NZ5G1
 R3
-IH`FMoPgnICZId`UA>gM7S3
+I_`U2ZWGkD6VEneASS1lcz1
 R4
 S1
 R0
-w1772396862
+w1773189482
 8pe_quad.sv
 Fpe_quad.sv
 !i122 0
-L0 3 135
+L0 3 134
 R5
 r1
 !s85 0
@@ -63,23 +63,24 @@ vtb_layer
 R1
 R2
 !i10b 1
-!s100 =NcD7m=C6leb]ea3U>2of2
+!s100 i6OCbg>0gYcdQQb:8>VG@1
 R3
-IeJ`C5IUMdmPKPUD;Nf:5O1
+IB65nk>]4Z<DLZ49BIM;U@2
 R4
 S1
 R0
-w1772396820
+w1773235727
 8tb_layer.sv
 Ftb_layer.sv
+Ftb_config.svh
 !i122 2
-L0 4 224
+L0 28 304
 R5
 r1
 !s85 0
 31
 R6
-!s107 tb_layer.sv|
+!s107 tb_config.svh|tb_layer.sv|
 !s90 -reportprogress|300|-sv|tb_layer.sv|
 !i113 1
 o-sv

@@ -1,0 +1,108 @@
+# do run_layer.do
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:37:03 on Mar 09,2026
+# vlog -sv pe_quad.sv 
+# -- Compiling module pe_quad
+# 
+# Top level modules:
+# 	pe_quad
+# End time: 21:37:03 on Mar 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:37:03 on Mar 09,2026
+# vlog -sv layer.sv 
+# -- Compiling module layer
+# 
+# Top level modules:
+# 	layer
+# End time: 21:37:03 on Mar 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:37:03 on Mar 09,2026
+# vlog -sv tb_layer.sv 
+# -- Compiling module tb_layer
+# 
+# Top level modules:
+# 	tb_layer
+# End time: 21:37:03 on Mar 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -suppress 2685,3722 -voptargs="+acc" -L altera_mf_ver -L lpm_ver work.tb_layer 
+# Start time: 21:37:03 on Mar 09,2026
+# Loading sv_std.std
+# Loading work.tb_layer
+# Loading work.layer
+# Loading altera_mf_ver.altsyncram
+# Loading work.pe_quad
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: gemma  Hostname: ZEUS  ProcessID: 16120
+#           Attempting to use alternate WLF file "./wlftgazzb6".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftgazzb6
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[0].weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[1].weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[2].weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[3].weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[4].weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[5].weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[6].weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[7].weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[8].weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[9].weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[10].weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[11].weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[12].weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[13].weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[14].weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[15].weight_ram.m_default.altsyncram_inst
+# =========================================================
+#  Starting Chebyshev Layer Testbench
+# =========================================================
+# FAIL PE[0] | Expected: -276 | Hardware: 0
+# FAIL PE[1] | Expected: 405 | Hardware: 0
+# FAIL PE[2] | Expected: 732 | Hardware: 0
+# FAIL PE[3] | Expected: -546 | Hardware: 0
+# FAIL PE[4] | Expected: 522 | Hardware: 0
+# FAIL PE[5] | Expected: -500 | Hardware: 0
+# FAIL PE[6] | Expected: 871 | Hardware: 0
+# FAIL PE[7] | Expected: 68 | Hardware: 0
+# FAIL PE[8] | Expected: -97 | Hardware: 0
+# FAIL PE[9] | Expected: 82 | Hardware: 0
+# FAIL PE[10] | Expected: -948 | Hardware: 0
+# FAIL PE[11] | Expected: 127 | Hardware: 0
+# FAIL PE[12] | Expected: 27 | Hardware: 0
+# FAIL PE[13] | Expected: -931 | Hardware: 0
+# FAIL PE[14] | Expected: 1417 | Hardware: 0
+# FAIL PE[15] | Expected: -331 | Hardware: 0
+# =========================================================
+#  FAILED WITH 16 ERRORS.
+# =========================================================
+# ** Note: $stop    : tb_layer.sv(231)
+#    Time: 645 ns  Iteration: 2  Instance: /tb_layer
+# Break in Module tb_layer at tb_layer.sv line 231
+# Stopped at tb_layer.sv line 231
+# wave zoomfull not supported in batch mode
+#  quit -f
+# End time: 21:37:04 on Mar 09,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 2

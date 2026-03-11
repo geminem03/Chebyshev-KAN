@@ -1,0 +1,15 @@
+Testcase: testcase_64x64
+Dimensions: 64 x 64
+Degree: 3
+Seed: 42
+Weight range: [-0.5, 0.5]
+MIF depth: 257 (256 coeff rows + 1 scale row)
+Requant: (acc * 1024) >>> 5
+Input range: [-30034, 29506]
+Accumulator range: [-9846, 9422]
+Requant output range: [-32767, 32767]
+
+To run in ModelSim:
+  1. Copy testcase_64x64/tb_config.svh to your RTL directory
+  2. Copy testcase_64x64/ folder to your RTL directory
+  3. do run_layer.do

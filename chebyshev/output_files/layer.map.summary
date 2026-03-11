@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Sun Mar 01 20:46:57 2026
+Analysis & Synthesis Status : Successful - Wed Mar 11 08:24:19 2026
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 Revision Name : layer
 Top-level Entity Name : layer
 Family : Arria 10
 Logic utilization (in ALMs) : N/A
-Total registers : 23957
+Total registers : 26116
 Total pins : 21
 Total virtual pins : 0
-Total block memory bits : 262,144
-Total DSP Blocks : 64
+Total block memory bits : 263,168
+Total DSP Blocks : 65
 Total HSSI RX channels : 0
 Total HSSI TX channels : 0
 Total PLLs : 0

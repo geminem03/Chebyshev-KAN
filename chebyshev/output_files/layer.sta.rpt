@@ -1,5 +1,5 @@
 Timing Analyzer report for layer
-Sun Mar 01 20:55:08 2026
+Wed Mar 11 08:33:57 2026
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 
 
@@ -96,12 +96,12 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.86        ;
+; Average used               ; 1.89        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-16        ;   5.7%      ;
+;     Processors 2-16        ;   5.9%      ;
 +----------------------------+-------------+
 
 
@@ -114,13 +114,13 @@ https://fpgasoftware.intel.com/eula.
 +------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
 
 
-+-------------------------------------------------+
-; Slow 900mV 100C Model Fmax Summary              ;
-+-----------+-----------------+------------+------+
-; Fmax      ; Restricted Fmax ; Clock Name ; Note ;
-+-----------+-----------------+------------+------+
-; 252.4 MHz ; 252.4 MHz       ; clk        ;      ;
-+-----------+-----------------+------------+------+
++--------------------------------------------------+
+; Slow 900mV 100C Model Fmax Summary               ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 242.66 MHz ; 242.66 MHz      ; clk        ;      ;
++------------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -135,7 +135,7 @@ HTML report is unavailable in plain text report export.
 +-------+--------+--------------------+
 ; Clock ; Slack  ; End Point TNS      ;
 +-------+--------+--------------------+
-; clk   ; -2.962 ; -33319.808         ;
+; clk   ; -3.121 ; -42717.041         ;
 +-------+--------+--------------------+
 
 
@@ -144,7 +144,7 @@ HTML report is unavailable in plain text report export.
 +-------+-------+--------------------+
 ; Clock ; Slack ; End Point TNS      ;
 +-------+-------+--------------------+
-; clk   ; 0.084 ; 0.000              ;
+; clk   ; 0.086 ; 0.000              ;
 +-------+-------+--------------------+
 
 
@@ -165,7 +165,7 @@ No paths to report.
 +-------+--------+----------------------------------+
 ; Clock ; Slack  ; End Point TNS                    ;
 +-------+--------+----------------------------------+
-; clk   ; -2.120 ; -1102.254                        ;
+; clk   ; -2.880 ; -1102.390                        ;
 +-------+--------+----------------------------------+
 
 
@@ -180,7 +180,7 @@ No synchronizer chains to report.
 +------------+-----------------+------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
 +------------+-----------------+------------+------+
-; 263.57 MHz ; 263.57 MHz      ; clk        ;      ;
+; 232.18 MHz ; 232.18 MHz      ; clk        ;      ;
 +------------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -190,7 +190,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+--------+--------------------+
 ; Clock ; Slack  ; End Point TNS      ;
 +-------+--------+--------------------+
-; clk   ; -2.794 ; -32356.204         ;
+; clk   ; -3.307 ; -41107.685         ;
 +-------+--------+--------------------+
 
 
@@ -199,7 +199,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+-------+--------------------+
 ; Clock ; Slack ; End Point TNS      ;
 +-------+-------+--------------------+
-; clk   ; 0.064 ; 0.000              ;
+; clk   ; 0.065 ; 0.000              ;
 +-------+-------+--------------------+
 
 
@@ -220,7 +220,7 @@ No paths to report.
 +-------+--------+----------------------------------+
 ; Clock ; Slack  ; End Point TNS                    ;
 +-------+--------+----------------------------------+
-; clk   ; -2.480 ; -1399.166                        ;
+; clk   ; -3.270 ; -1402.378                        ;
 +-------+--------+----------------------------------+
 
 
@@ -235,7 +235,7 @@ No synchronizer chains to report.
 +-------+--------+--------------------+
 ; Clock ; Slack  ; End Point TNS      ;
 +-------+--------+--------------------+
-; clk   ; -1.860 ; -12991.739         ;
+; clk   ; -1.903 ; -17512.038         ;
 +-------+--------+--------------------+
 
 
@@ -244,7 +244,7 @@ No synchronizer chains to report.
 +-------+-------+--------------------+
 ; Clock ; Slack ; End Point TNS      ;
 +-------+-------+--------------------+
-; clk   ; 0.019 ; 0.000              ;
+; clk   ; 0.015 ; 0.000              ;
 +-------+-------+--------------------+
 
 
@@ -265,7 +265,7 @@ No paths to report.
 +-------+--------+----------------------------------+
 ; Clock ; Slack  ; End Point TNS                    ;
 +-------+--------+----------------------------------+
-; clk   ; -0.810 ; -431.270                         ;
+; clk   ; -1.210 ; -433.690                         ;
 +-------+--------+----------------------------------+
 
 
@@ -280,7 +280,7 @@ No synchronizer chains to report.
 +-------+--------+--------------------+
 ; Clock ; Slack  ; End Point TNS      ;
 +-------+--------+--------------------+
-; clk   ; -1.284 ; -6395.315          ;
+; clk   ; -1.281 ; -9463.692          ;
 +-------+--------+--------------------+
 
 
@@ -289,7 +289,7 @@ No synchronizer chains to report.
 +-------+-------+--------------------+
 ; Clock ; Slack ; End Point TNS      ;
 +-------+-------+--------------------+
-; clk   ; 0.014 ; 0.000              ;
+; clk   ; 0.012 ; 0.000              ;
 +-------+-------+--------------------+
 
 
@@ -310,7 +310,7 @@ No paths to report.
 +-------+--------+----------------------------------+
 ; Clock ; Slack  ; End Point TNS                    ;
 +-------+--------+----------------------------------+
-; clk   ; -0.890 ; -517.286                         ;
+; clk   ; -1.300 ; -519.886                         ;
 +-------+--------+----------------------------------+
 
 
@@ -325,10 +325,10 @@ No synchronizer chains to report.
 +------------------+------------+-------+----------+---------+---------------------+
 ; Clock            ; Setup      ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+------------+-------+----------+---------+---------------------+
-; Worst-case Slack ; -2.962     ; 0.014 ; N/A      ; N/A     ; -2.480              ;
-;  clk             ; -2.962     ; 0.014 ; N/A      ; N/A     ; -2.480              ;
-; Design-wide TNS  ; -33319.808 ; 0.0   ; 0.0      ; 0.0     ; -1399.166           ;
-;  clk             ; -33319.808 ; 0.000 ; N/A      ; N/A     ; -1399.166           ;
+; Worst-case Slack ; -3.307     ; 0.012 ; N/A      ; N/A     ; -3.270              ;
+;  clk             ; -3.307     ; 0.012 ; N/A      ; N/A     ; -3.270              ;
+; Design-wide TNS  ; -42717.041 ; 0.0   ; 0.0      ; 0.0     ; -1402.378           ;
+;  clk             ; -42717.041 ; 0.000 ; N/A      ; N/A     ; -1402.378           ;
 +------------------+------------+-------+----------+---------+---------------------+
 
 
@@ -337,8 +337,8 @@ No synchronizer chains to report.
 +-----------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
 ; Pin       ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
 +-----------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
-; debug_bit ; 1.8 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; ready     ; 1.8 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; debug_bit ; 1.8 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 +-----------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
 
 
@@ -375,8 +375,8 @@ No synchronizer chains to report.
 +-----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 ; Pin       ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
 +-----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
-; debug_bit ; 1.8 V        ; 0 s                 ; 0 s                 ; 1.66 V                       ; 1.94e-06 V                   ; 1.69 V              ; -0.0491 V           ; 0.122 V                              ; 0.084 V                              ; 2.38e-10 s                  ; 2.28e-10 s                  ; No                         ; No                         ; 1.66 V                      ; 1.94e-06 V                  ; 1.69 V             ; -0.0491 V          ; 0.122 V                             ; 0.084 V                             ; 2.38e-10 s                 ; 2.28e-10 s                 ; No                        ; No                        ;
 ; ready     ; 1.8 V        ; 0 s                 ; 0 s                 ; 1.66 V                       ; 1.94e-06 V                   ; 1.69 V              ; -0.0491 V           ; 0.122 V                              ; 0.084 V                              ; 2.38e-10 s                  ; 2.28e-10 s                  ; No                         ; No                         ; 1.66 V                      ; 1.94e-06 V                  ; 1.69 V             ; -0.0491 V          ; 0.122 V                             ; 0.084 V                             ; 2.38e-10 s                 ; 2.28e-10 s                 ; No                        ; No                        ;
+; debug_bit ; 1.8 V        ; 0 s                 ; 0 s                 ; 1.66 V                       ; 1.94e-06 V                   ; 1.69 V              ; -0.0491 V           ; 0.122 V                              ; 0.084 V                              ; 2.38e-10 s                  ; 2.28e-10 s                  ; No                         ; No                         ; 1.66 V                      ; 1.94e-06 V                  ; 1.69 V             ; -0.0491 V          ; 0.122 V                             ; 0.084 V                             ; 2.38e-10 s                 ; 2.28e-10 s                 ; No                        ; No                        ;
 +-----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
@@ -385,8 +385,8 @@ No synchronizer chains to report.
 +-----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 ; Pin       ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
 +-----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
-; debug_bit ; 1.8 V        ; 0 s                 ; 0 s                 ; 1.89 V                       ; 1.62e-07 V                   ; 2.04 V              ; -0.201 V            ; 0.161 V                              ; 0.176 V                              ; 1.26e-10 s                  ; 1.19e-10 s                  ; No                         ; No                         ; 1.89 V                      ; 1.62e-07 V                  ; 2.04 V             ; -0.201 V           ; 0.161 V                             ; 0.176 V                             ; 1.26e-10 s                 ; 1.19e-10 s                 ; No                        ; No                        ;
 ; ready     ; 1.8 V        ; 0 s                 ; 0 s                 ; 1.89 V                       ; 1.62e-07 V                   ; 2.04 V              ; -0.201 V            ; 0.161 V                              ; 0.176 V                              ; 1.26e-10 s                  ; 1.19e-10 s                  ; No                         ; No                         ; 1.89 V                      ; 1.62e-07 V                  ; 2.04 V             ; -0.201 V           ; 0.161 V                             ; 0.176 V                             ; 1.26e-10 s                 ; 1.19e-10 s                 ; No                        ; No                        ;
+; debug_bit ; 1.8 V        ; 0 s                 ; 0 s                 ; 1.89 V                       ; 1.62e-07 V                   ; 2.04 V              ; -0.201 V            ; 0.161 V                              ; 0.176 V                              ; 1.26e-10 s                  ; 1.19e-10 s                  ; No                         ; No                         ; 1.89 V                      ; 1.62e-07 V                  ; 2.04 V             ; -0.201 V           ; 0.161 V                             ; 0.176 V                             ; 1.26e-10 s                 ; 1.19e-10 s                 ; No                        ; No                        ;
 +-----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
@@ -395,7 +395,7 @@ No synchronizer chains to report.
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; clk        ; clk      ; 1399926  ; 0        ; 0        ; 0        ;
+; clk        ; clk      ; 1491960  ; 0        ; 0        ; 0        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -405,7 +405,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; clk        ; clk      ; 1399926  ; 0        ; 0        ; 0        ;
+; clk        ; clk      ; 1491960  ; 0        ; 0        ; 0        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -418,9 +418,9 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 ; Illegal Clocks                  ; 0     ; 0     ;
 ; Unconstrained Clocks            ; 0     ; 0     ;
 ; Unconstrained Input Ports       ; 18    ; 18    ;
-; Unconstrained Input Port Paths  ; 27509 ; 27509 ;
+; Unconstrained Input Port Paths  ; 29566 ; 29566 ;
 ; Unconstrained Output Ports      ; 2     ; 2     ;
-; Unconstrained Output Port Paths ; 1409  ; 1409  ;
+; Unconstrained Output Port Paths ; 2433  ; 2433  ;
 +---------------------------------+-------+-------+
 
 
@@ -511,7 +511,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
-    Info: Processing started: Sun Mar 01 20:54:47 2026
+    Info: Processing started: Wed Mar 11 08:33:33 2026
 Info: Command: quartus_sta chebyshev -c layer
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -528,71 +528,71 @@ Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 900mV 100C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -2.962
+Info (332146): Worst-case setup slack is -3.121
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.962          -33319.808 clk 
-Info (332146): Worst-case hold slack is 0.084
+    Info (332119):    -3.121          -42717.041 clk 
+Info (332146): Worst-case hold slack is 0.086
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.084               0.000 clk 
+    Info (332119):     0.086               0.000 clk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -2.120
+Info (332146): Worst-case minimum pulse width slack is -2.880
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.120           -1102.254 clk 
+    Info (332119):    -2.880           -1102.390 clk 
 Info: Analyzing Slow 900mV -40C Model
-Info (332146): Worst-case setup slack is -2.794
+Info (332146): Worst-case setup slack is -3.307
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.794          -32356.204 clk 
-Info (332146): Worst-case hold slack is 0.064
+    Info (332119):    -3.307          -41107.685 clk 
+Info (332146): Worst-case hold slack is 0.065
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.064               0.000 clk 
+    Info (332119):     0.065               0.000 clk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -2.480
+Info (332146): Worst-case minimum pulse width slack is -3.270
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.480           -1399.166 clk 
+    Info (332119):    -3.270           -1402.378 clk 
 Info: Analyzing Fast 900mV 100C Model
-Info (332146): Worst-case setup slack is -1.860
+Info (332146): Worst-case setup slack is -1.903
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.860          -12991.739 clk 
-Info (332146): Worst-case hold slack is 0.019
+    Info (332119):    -1.903          -17512.038 clk 
+Info (332146): Worst-case hold slack is 0.015
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.019               0.000 clk 
+    Info (332119):     0.015               0.000 clk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.810
+Info (332146): Worst-case minimum pulse width slack is -1.210
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.810            -431.270 clk 
+    Info (332119):    -1.210            -433.690 clk 
 Info: Analyzing Fast 900mV -40C Model
-Info (332146): Worst-case setup slack is -1.284
+Info (332146): Worst-case setup slack is -1.281
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.284           -6395.315 clk 
-Info (332146): Worst-case hold slack is 0.014
+    Info (332119):    -1.281           -9463.692 clk 
+Info (332146): Worst-case hold slack is 0.012
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.014               0.000 clk 
+    Info (332119):     0.012               0.000 clk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.890
+Info (332146): Worst-case minimum pulse width slack is -1.300
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.890            -517.286 clk 
+    Info (332119):    -1.300            -519.886 clk 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 8133 megabytes
-    Info: Processing ended: Sun Mar 01 20:55:08 2026
-    Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:01:57
+    Info: Peak virtual memory: 8198 megabytes
+    Info: Processing ended: Wed Mar 11 08:33:57 2026
+    Info: Elapsed time: 00:00:24
+    Info: Total CPU time (on all processors): 00:02:17
 
 

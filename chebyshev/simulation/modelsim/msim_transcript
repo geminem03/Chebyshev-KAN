@@ -10,64 +10,62 @@
 # Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Skule_Hardrive/kan-tpu/chebyshev {C:/Skule_Hardrive/kan-tpu/chebyshev/pe_quad.sv}
+# vlog -sv -work work +incdir+C:/Skule_Hardrive/Chebyshev-KAN/chebyshev {C:/Skule_Hardrive/Chebyshev-KAN/chebyshev/pe_quad.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:56:19 on Mar 01,2026
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Skule_Hardrive/kan-tpu/chebyshev" C:/Skule_Hardrive/kan-tpu/chebyshev/pe_quad.sv 
+# Start time: 08:44:49 on Mar 11,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Skule_Hardrive/Chebyshev-KAN/chebyshev" C:/Skule_Hardrive/Chebyshev-KAN/chebyshev/pe_quad.sv 
 # -- Compiling module pe_quad
 # 
 # Top level modules:
 # 	pe_quad
-# End time: 20:56:19 on Mar 01,2026, Elapsed time: 0:00:00
+# End time: 08:44:49 on Mar 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Skule_Hardrive/kan-tpu/chebyshev {C:/Skule_Hardrive/kan-tpu/chebyshev/layer.sv}
+# vlog -sv -work work +incdir+C:/Skule_Hardrive/Chebyshev-KAN/chebyshev {C:/Skule_Hardrive/Chebyshev-KAN/chebyshev/layer.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:56:19 on Mar 01,2026
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Skule_Hardrive/kan-tpu/chebyshev" C:/Skule_Hardrive/kan-tpu/chebyshev/layer.sv 
+# Start time: 08:44:49 on Mar 11,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Skule_Hardrive/Chebyshev-KAN/chebyshev" C:/Skule_Hardrive/Chebyshev-KAN/chebyshev/layer.sv 
 # -- Compiling module layer
 # 
 # Top level modules:
 # 	layer
-# End time: 20:56:19 on Mar 01,2026, Elapsed time: 0:00:00
+# End time: 08:44:49 on Mar 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 cd ../..
 # reading modelsim.ini
-pwd
-# C:/Skule_Hardrive/kan-tpu/chebyshev
 do run_layer.do
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap work work 
 # Modifying modelsim.ini
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:56:32 on Mar 01,2026
+# Start time: 08:44:58 on Mar 11,2026
 # vlog -reportprogress 300 -sv pe_quad.sv 
 # -- Compiling module pe_quad
 # 
 # Top level modules:
 # 	pe_quad
-# End time: 20:56:32 on Mar 01,2026, Elapsed time: 0:00:00
+# End time: 08:44:58 on Mar 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:56:32 on Mar 01,2026
+# Start time: 08:44:58 on Mar 11,2026
 # vlog -reportprogress 300 -sv layer.sv 
 # -- Compiling module layer
 # 
 # Top level modules:
 # 	layer
-# End time: 20:56:32 on Mar 01,2026, Elapsed time: 0:00:00
+# End time: 08:44:58 on Mar 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:56:32 on Mar 01,2026
+# Start time: 08:44:58 on Mar 11,2026
 # vlog -reportprogress 300 -sv tb_layer.sv 
 # -- Compiling module tb_layer
 # 
 # Top level modules:
 # 	tb_layer
-# End time: 20:56:32 on Mar 01,2026, Elapsed time: 0:00:00
+# End time: 08:44:58 on Mar 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -suppress 2685,3722 -voptargs="+acc" -L altera_mf_ver -L lpm_ver work.tb_layer 
-# Start time: 20:56:32 on Mar 01,2026
+# Start time: 08:44:59 on Mar 11,2026
 # Loading sv_std.std
 # Loading work.tb_layer
 # Loading work.layer
@@ -78,217 +76,2058 @@ do run_layer.do
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: gemma  Hostname: ZEUS  ProcessID: 16120
-#           Attempting to use alternate WLF file "./wlftfj0rxb".
+#           Attempting to use alternate WLF file "./wlft264mjr".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftfj0rxb
-# ** UI-Msg: (vish-4014) No objects found matching '/tb_layer/uut/state'.
-# Error in macro ./run_layer.do line 21
-# ** UI-Msg: (vish-4014) No objects found matching '/tb_layer/uut/state'.
-#     while executing
-# "add wave -position insertpoint sim:/tb_layer/uut/state"
-run -all
+#           Using alternate file: ./wlft264mjr
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[0].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[0].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[1].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[1].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[2].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[2].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[3].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[3].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[4].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[4].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[5].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[5].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[6].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[6].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[7].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[7].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[8].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[8].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[9].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[9].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[10].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[10].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[11].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[11].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[12].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[12].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[13].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[13].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[14].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[14].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[15].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[15].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[16].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[16].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[17].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[17].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[18].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[18].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[19].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[19].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[20].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[20].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[21].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[21].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[22].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[22].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[23].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[23].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[24].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[24].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[25].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[25].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[26].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[26].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[27].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[27].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[28].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[28].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[29].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[29].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[30].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[30].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[31].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[31].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[32].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[32].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[33].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[33].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[34].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[34].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[35].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[35].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[36].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[36].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[37].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[37].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[38].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[38].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[39].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[39].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[40].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[40].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[41].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[41].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[42].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[42].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[43].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[43].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[44].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[44].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[45].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[45].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[46].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[46].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[47].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[47].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[48].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[48].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[49].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[49].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[50].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[50].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[51].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[51].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[52].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[52].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[53].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[53].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[54].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[54].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[55].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[55].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[56].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[56].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[57].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[57].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[58].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[58].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[59].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[59].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[60].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[60].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[61].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[61].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[62].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[62].mif_sel.weight_ram.m_default.altsyncram_inst
 # Warning: RAM block type is assumed as     AUTO
-# Time: 0  Instance: tb_layer.dut.pes[63].weight_ram.m_default.altsyncram_inst
+# Time: 0  Instance: tb_layer.dut.pes[63].mif_sel.weight_ram.m_default.altsyncram_inst
 # =========================================================
-#  Starting Chebyshev Layer Testbench
-# =========================================================
-# PASS PE[0] | Value: 5248
-# PASS PE[1] | Value: 5324
-# PASS PE[2] | Value: 5402
-# PASS PE[3] | Value: 5486
-# PASS PE[4] | Value: 5568
-# PASS PE[5] | Value: 5654
-# PASS PE[6] | Value: 5730
-# PASS PE[7] | Value: 5816
-# PASS PE[8] | Value: 5894
-# PASS PE[9] | Value: 5982
-# PASS PE[10] | Value: 6064
-# PASS PE[11] | Value: 6136
-# PASS PE[12] | Value: 6218
-# PASS PE[13] | Value: 6310
-# PASS PE[14] | Value: 6388
-# PASS PE[15] | Value: 6472
-# PASS PE[16] | Value: 6556
-# PASS PE[17] | Value: 6626
-# PASS PE[18] | Value: 6720
-# PASS PE[19] | Value: 6794
-# PASS PE[20] | Value: 6870
-# PASS PE[21] | Value: 6960
-# PASS PE[22] | Value: 7044
-# PASS PE[23] | Value: 7116
-# PASS PE[24] | Value: 7210
-# PASS PE[25] | Value: 7288
-# PASS PE[26] | Value: 7372
-# PASS PE[27] | Value: 7454
-# PASS PE[28] | Value: 7534
-# PASS PE[29] | Value: 7612
-# PASS PE[30] | Value: 7694
-# PASS PE[31] | Value: 7774
-# PASS PE[32] | Value: 7868
-# PASS PE[33] | Value: 7936
-# PASS PE[34] | Value: 8030
-# PASS PE[35] | Value: 8108
-# PASS PE[36] | Value: 8188
-# PASS PE[37] | Value: 8280
-# PASS PE[38] | Value: 8354
-# PASS PE[39] | Value: 8428
-# PASS PE[40] | Value: 8518
-# PASS PE[41] | Value: 8602
-# PASS PE[42] | Value: 8678
-# PASS PE[43] | Value: 8764
-# PASS PE[44] | Value: 8840
-# PASS PE[45] | Value: 8926
-# PASS PE[46] | Value: 9016
-# PASS PE[47] | Value: 9084
-# PASS PE[48] | Value: 9170
-# PASS PE[49] | Value: 9256
-# PASS PE[50] | Value: 9340
-# PASS PE[51] | Value: 9416
-# PASS PE[52] | Value: 9498
-# PASS PE[53] | Value: 9578
-# PASS PE[54] | Value: 9668
-# PASS PE[55] | Value: 9746
-# PASS PE[56] | Value: 9824
-# PASS PE[57] | Value: 9912
-# PASS PE[58] | Value: 9992
-# PASS PE[59] | Value: 10074
-# PASS PE[60] | Value: 10152
-# PASS PE[61] | Value: 10240
-# PASS PE[62] | Value: 10320
-# PASS PE[63] | Value: 10390
-# =========================================================
-#  SUCCESS! All 64 PE outputs match the Hamiltonian Reference.
+#  Chebyshev Layer Testbench
 # ---------------------------------------------------------
-#  Total Cycles : 390
+#  NUM_INPUTS  = 64
+#  NUM_OUTPUTS = 64
+#  DEGREE      = 3
+#  REQUANT_SHIFT = 5
+#  TESTCASE_DIR  = testcase_64x64
 # =========================================================
-# ** Note: $stop    : tb_layer.sv(224)
-#    Time: 4005 ns  Iteration: 2  Instance: /tb_layer
-# Break in Module tb_layer at tb_layer.sv line 224
-# End time: 21:00:19 on Mar 01,2026, Elapsed time: 0:03:47
+# 
+# ----- Accumulator Check (exact) -----
+#   ACC FAIL PE[0] | Expected: 5533 | Got: 1709469
+#   ACC FAIL PE[1] | Expected: 591 | Got: 1966671
+#   ACC FAIL PE[2] | Expected: 2751 | Got: -2094401
+#   ACC FAIL PE[3] | Expected: 1673 | Got: 1705609
+#   ACC FAIL PE[4] | Expected: 435 | Got: 1966515
+#   ACC FAIL PE[5] | Expected: -1723 | Got: -2033339
+#   ACC FAIL PE[6] | Expected: -2006 | Got: -1902550
+#   ACC FAIL PE[7] | Expected: -6314 | Got: -1906858
+#   ACC FAIL PE[8] | Expected: -2014 | Got: -1968094
+#   ACC FAIL PE[9] | Expected: -2340 | Got: -2033956
+#   ACC FAIL PE[10] | Expected: -6100 | Got: -1710036
+#   ACC FAIL PE[11] | Expected: -1686 | Got: -1771158
+#   ACC FAIL PE[12] | Expected: 4830 | Got: 1839838
+#   ACC FAIL PE[13] | Expected: 1934 | Got: -2095218
+#   ACC FAIL PE[14] | Expected: 2892 | Got: 1968972
+#   ACC FAIL PE[15] | Expected: 1604 | Got: -1964476
+#   ACC FAIL PE[16] | Expected: 2802 | Got: 1903346
+#   ACC FAIL PE[17] | Expected: 3356 | Got: 1772828
+#   ACC FAIL PE[18] | Expected: -459 | Got: -1835467
+#   ACC FAIL PE[19] | Expected: -4407 | Got: -1839415
+#   ACC FAIL PE[20] | Expected: 3847 | Got: 1707783
+#   ACC FAIL PE[21] | Expected: -1038 | Got: -2032654
+#   ACC FAIL PE[22] | Expected: -9846 | Got: -1648246
+#   ACC FAIL PE[23] | Expected: -3286 | Got: -1772758
+#   ACC FAIL PE[24] | Expected: -1417 | Got: 2030199
+#   ACC FAIL PE[25] | Expected: 3351 | Got: 1969431
+#   ACC FAIL PE[26] | Expected: 2098 | Got: 1837106
+#   ACC FAIL PE[27] | Expected: -3023 | Got: -1838031
+#   ACC FAIL PE[28] | Expected: 9422 | Got: 1254606
+#   ACC FAIL PE[29] | Expected: -424 | Got: 2096728
+#   ACC FAIL PE[30] | Expected: 2032 | Got: -2095120
+#   ACC FAIL PE[31] | Expected: -2955 | Got: -1903499
+#   ACC FAIL PE[32] | Expected: 2643 | Got: 1837651
+#   ACC FAIL PE[33] | Expected: -8248 | Got: -1581112
+#   ACC FAIL PE[34] | Expected: -7266 | Got: -1645666
+#   ACC FAIL PE[35] | Expected: 5385 | Got: 1709321
+#   ACC FAIL PE[36] | Expected: -1223 | Got: -1770695
+#   ACC FAIL PE[37] | Expected: -2948 | Got: -1969028
+#   ACC FAIL PE[38] | Expected: -2149 | Got: -1968229
+#   ACC FAIL PE[39] | Expected: -1041 | Got: -2032657
+#   ACC FAIL PE[40] | Expected: -1532 | Got: 2095620
+#   ACC FAIL PE[41] | Expected: 4501 | Got: 1905045
+#   ACC FAIL PE[42] | Expected: 1642 | Got: 1902186
+#   ACC FAIL PE[43] | Expected: -5112 | Got: -1971192
+#   ACC FAIL PE[44] | Expected: 1493 | Got: 1967573
+#   ACC FAIL PE[45] | Expected: -1725 | Got: 2095427
+#   ACC FAIL PE[46] | Expected: 887 | Got: 1835895
+#   ACC FAIL PE[47] | Expected: 1102 | Got: 1967182
+#   ACC FAIL PE[48] | Expected: 530 | Got: -2096622
+#   ACC FAIL PE[49] | Expected: 4921 | Got: 1905465
+#   ACC FAIL PE[50] | Expected: 3603 | Got: 1904147
+#   ACC FAIL PE[51] | Expected: -7808 | Got: -1384064
+#   ACC FAIL PE[52] | Expected: -6037 | Got: -1644437
+#   ACC FAIL PE[53] | Expected: 3382 | Got: 1641782
+#   ACC FAIL PE[54] | Expected: -4095 | Got: -1773567
+#   ACC FAIL PE[55] | Expected: -4529 | Got: -1839537
+#   ACC FAIL PE[56] | Expected: 3862 | Got: 1904406
+#   ACC FAIL PE[57] | Expected: -1547 | Got: -1902091
+#   ACC FAIL PE[58] | Expected: 1212 | Got: -2095940
+#   ACC FAIL PE[59] | Expected: -3966 | Got: -1970046
+#   ACC FAIL PE[60] | Expected: 3623 | Got: 2035239
+#   ACC FAIL PE[61] | Expected: 2999 | Got: 1772471
+#   ACC FAIL PE[62] | Expected: 2287 | Got: 1837295
+#   ACC FAIL PE[63] | Expected: 5442 | Got: 1971522
+# 
+# ----- Requant Check (tolerance +/-1) -----
+#   RQ  PASS PE[0] | Value: 32767
+#   RQ  FAIL PE[1] | Expected: 18912, Got: 32767
+#   RQ  PASS PE[2] | Value: 32767
+#   RQ  FAIL PE[3] | Expected: 32767, Got: -32767
+#   RQ  FAIL PE[4] | Expected: 13920, Got: -32767
+#   RQ  FAIL PE[5] | Expected: -32767, Got: 32767
+#   RQ  PASS PE[6] | Value: -32767
+#   RQ  FAIL PE[7] | Expected: -32767, Got: 32767
+#   RQ  PASS PE[8] | Value: -32767
+#   RQ  FAIL PE[9] | Expected: -32767, Got: 32767
+#   RQ  FAIL PE[10] | Expected: -32767, Got: 32767
+#   RQ  PASS PE[11] | Value: -32767
+#   RQ  PASS PE[12] | Value: 32767
+#   RQ  FAIL PE[13] | Expected: 32767, Got: -32767
+#   RQ  FAIL PE[14] | Expected: 32767, Got: -32767
+#   RQ  FAIL PE[15] | Expected: 32767, Got: -32767
+#   RQ  PASS PE[16] | Value: 32767
+#   RQ  PASS PE[17] | Value: 32767
+#   RQ  FAIL PE[18] | Expected: -14688, Got: -32767
+#   RQ  PASS PE[19] | Value: -32767
+#   RQ  PASS PE[20] | Value: 32767
+#   RQ  FAIL PE[21] | Expected: -32767, Got: 32767
+#   RQ  FAIL PE[22] | Expected: -32767, Got: 32767
+#   RQ  PASS PE[23] | Value: -32767
+#   RQ  PASS PE[24] | Value: -32767
+#   RQ  FAIL PE[25] | Expected: 32767, Got: -32767
+#   RQ  PASS PE[26] | Value: 32767
+#   RQ  FAIL PE[27] | Expected: -32767, Got: 32767
+#   RQ  PASS PE[28] | Value: 32767
+#   RQ  FAIL PE[29] | Expected: -13568, Got: 32767
+#   RQ  FAIL PE[30] | Expected: 32767, Got: -32767
+#   RQ  FAIL PE[31] | Expected: -32767, Got: 32767
+#   RQ  PASS PE[32] | Value: 32767
+#   RQ  FAIL PE[33] | Expected: -32767, Got: 32767
+#   RQ  FAIL PE[34] | Expected: -32767, Got: 32767
+#   RQ  PASS PE[35] | Value: 32767
+#   RQ  PASS PE[36] | Value: -32767
+#   RQ  FAIL PE[37] | Expected: -32767, Got: 32767
+#   RQ  FAIL PE[38] | Expected: -32767, Got: 32767
+#   RQ  FAIL PE[39] | Expected: -32767, Got: 32767
+#   RQ  PASS PE[40] | Value: -32767
+#   RQ  PASS PE[41] | Value: 32767
+#   RQ  FAIL PE[42] | Expected: 32767, Got: -32767
+#   RQ  FAIL PE[43] | Expected: -32767, Got: 32767
+#   RQ  PASS PE[44] | Value: 32767
+#   RQ  PASS PE[45] | Value: -32767
+#   RQ  FAIL PE[46] | Expected: 28384, Got: -32767
+#   RQ  FAIL PE[47] | Expected: 32767, Got: -32767
+#   RQ  FAIL PE[48] | Expected: 16960, Got: -32767
+#   RQ  PASS PE[49] | Value: 32767
+#   RQ  PASS PE[50] | Value: 32767
+#   RQ  PASS PE[51] | Value: -32767
+#   RQ  FAIL PE[52] | Expected: -32767, Got: 32767
+#   RQ  FAIL PE[53] | Expected: 32767, Got: -32767
+#   RQ  FAIL PE[54] | Expected: -32767, Got: 32767
+#   RQ  PASS PE[55] | Value: -32767
+#   RQ  FAIL PE[56] | Expected: 32767, Got: -32767
+#   RQ  FAIL PE[57] | Expected: -32767, Got: 32767
+#   RQ  PASS PE[58] | Value: 32767
+#   RQ  FAIL PE[59] | Expected: -32767, Got: 32767
+#   RQ  FAIL PE[60] | Expected: 32767, Got: -32767
+#   RQ  FAIL PE[61] | Expected: 32767, Got: -32767
+#   RQ  FAIL PE[62] | Expected: 32767, Got: -32767
+#   RQ  FAIL PE[63] | Expected: 32767, Got: -32767
+# 
+# =========================================================
+#  RESULTS SUMMARY
+# ---------------------------------------------------------
+#  Total Cycles:       457
+#  Accumulator Errors:  64 / 64
+#  Requant Errors:      38 / 64
+# ---------------------------------------------------------
+#  TEST FAILED
+# =========================================================
+# ** Note: $stop    : tb_layer.sv(317)
+#    Time: 4685 ns  Iteration: 1  Instance: /tb_layer
+# Break in Module tb_layer at tb_layer.sv line 317
+# 0 ps
+# 4919250 ps
+vlog -sv layer.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:51:45 on Mar 11,2026
+# vlog -reportprogress 300 -sv layer.sv 
+# -- Compiling module layer
+# 
+# Top level modules:
+# 	layer
+# End time: 08:51:45 on Mar 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do run_layer.do
+# Error 31: Unable to unlink file "C:/Skule_Hardrive/Chebyshev-KAN/chebyshev/work/_lib.qdb".
+# Error 133: Unable to remove directory "C:/Skule_Hardrive/Chebyshev-KAN/chebyshev/work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:51:55 on Mar 11,2026
+# vlog -reportprogress 300 -sv pe_quad.sv 
+# -- Compiling module pe_quad
+# 
+# Top level modules:
+# 	pe_quad
+# End time: 08:51:55 on Mar 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:51:55 on Mar 11,2026
+# vlog -reportprogress 300 -sv layer.sv 
+# -- Compiling module layer
+# 
+# Top level modules:
+# 	layer
+# End time: 08:51:55 on Mar 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:51:55 on Mar 11,2026
+# vlog -reportprogress 300 -sv tb_layer.sv 
+# -- Compiling module tb_layer
+# 
+# Top level modules:
+# 	tb_layer
+# End time: 08:51:56 on Mar 11,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 08:51:57 on Mar 11,2026, Elapsed time: 0:06:58
+# Errors: 0, Warnings: 2
+# vsim -suppress 2685,3722 -voptargs="+acc" -L altera_mf_ver -L lpm_ver work.tb_layer 
+# Start time: 08:51:58 on Mar 11,2026
+# Loading sv_std.std
+# Loading work.tb_layer
+# Loading work.layer
+# Loading altera_mf_ver.altsyncram
+# Loading work.pe_quad
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[0]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[0]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[1]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[1]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[2]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[2]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[3]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[3]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[4]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[4]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[5]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[5]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[6]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[6]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[7]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[7]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[8]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[8]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[9]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[9]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[10]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[10]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[11]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[11]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[12]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[12]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[13]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[13]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[14]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[14]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[15]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[15]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[16]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[16]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[17]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[17]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[18]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[18]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[19]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[19]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[20]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[20]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[21]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[21]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[22]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[22]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[23]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[23]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[24]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[24]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[25]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[25]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[26]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[26]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[27]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[27]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[28]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[28]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[29]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[29]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[30]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[30]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[31]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[31]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[32]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[32]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[33]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[33]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[34]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[34]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[35]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[35]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[36]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[36]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[37]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[37]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[38]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[38]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[39]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[39]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[40]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[40]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[41]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[41]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[42]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[42]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[43]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[43]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[44]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[44]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[45]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[45]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[46]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[46]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[47]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[47]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[48]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[48]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[49]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[49]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[50]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[50]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[51]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[51]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[52]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[52]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[53]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[53]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[54]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[54]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[55]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[55]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[56]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[56]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[57]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[57]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[58]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[58]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[59]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[59]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[60]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[60]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[61]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[61]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[62]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[62]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# ** Error: (vsim-8576) Override of parameter 'init_file' from '/tb_layer/dut/pes[63]/mif_sel/weight_ram' has an incompatible value.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[63]/mif_sel/weight_ram File: $MODEL_TECH/../altera/verilog/src/altera_mf.v
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./run_layer.do PAUSED at line 23
+vlog -sv layer.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:52:13 on Mar 11,2026
+# vlog -reportprogress 300 -sv layer.sv 
+# -- Compiling module layer
+# 
+# Top level modules:
+# 	layer
+# End time: 08:52:13 on Mar 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do run_layer.do
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:52:17 on Mar 11,2026
+# vlog -reportprogress 300 -sv pe_quad.sv 
+# -- Compiling module pe_quad
+# 
+# Top level modules:
+# 	pe_quad
+# End time: 08:52:17 on Mar 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:52:17 on Mar 11,2026
+# vlog -reportprogress 300 -sv layer.sv 
+# -- Compiling module layer
+# 
+# Top level modules:
+# 	layer
+# End time: 08:52:17 on Mar 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:52:17 on Mar 11,2026
+# vlog -reportprogress 300 -sv tb_layer.sv 
+# -- Compiling module tb_layer
+# 
+# Top level modules:
+# 	tb_layer
+# End time: 08:52:17 on Mar 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -suppress 2685,3722 -voptargs="+acc" -L altera_mf_ver -L lpm_ver work.tb_layer 
+# Start time: 08:51:58 on Mar 11,2026
+# Loading sv_std.std
+# Loading work.tb_layer
+# Loading work.layer
+# Loading altera_mf_ver.altsyncram
+# Loading work.pe_quad
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: gemma  Hostname: ZEUS  ProcessID: 16120
+#           Attempting to use alternate WLF file "./wlft3ytkw0".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft3ytkw0
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[0].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[1].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[2].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[3].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[4].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[5].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[6].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[7].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[8].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[9].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[10].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[11].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[12].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[13].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[14].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[15].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[16].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[17].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[18].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[19].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[20].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[21].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[22].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[23].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[24].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[25].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[26].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[27].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[28].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[29].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[30].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[31].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[32].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[33].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[34].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[35].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[36].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[37].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[38].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[39].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[40].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[41].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[42].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[43].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[44].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[45].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[46].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[47].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[48].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[49].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[50].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[51].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[52].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[53].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[54].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[55].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[56].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[57].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[58].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[59].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[60].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[61].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[62].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[63].mif_sel.weight_ram.m_default.altsyncram_inst
+# =========================================================
+#  Chebyshev Layer Testbench
+# ---------------------------------------------------------
+#  NUM_INPUTS  = 64
+#  NUM_OUTPUTS = 64
+#  DEGREE      = 3
+#  REQUANT_SHIFT = 5
+#  TESTCASE_DIR  = testcase_64x64
+# =========================================================
+# 
+# ----- Accumulator Check (exact) -----
+#   ACC FAIL PE[0] | Expected: 5533 | Got: 1709469
+#   ACC FAIL PE[1] | Expected: 591 | Got: 1966671
+#   ACC FAIL PE[2] | Expected: 2751 | Got: -2094401
+#   ACC FAIL PE[3] | Expected: 1673 | Got: 1705609
+#   ACC FAIL PE[4] | Expected: 435 | Got: 1966515
+#   ACC FAIL PE[5] | Expected: -1723 | Got: -2033339
+#   ACC FAIL PE[6] | Expected: -2006 | Got: -1902550
+#   ACC FAIL PE[7] | Expected: -6314 | Got: -1906858
+#   ACC FAIL PE[8] | Expected: -2014 | Got: -1968094
+#   ACC FAIL PE[9] | Expected: -2340 | Got: -2033956
+#   ACC FAIL PE[10] | Expected: -6100 | Got: -1710036
+#   ACC FAIL PE[11] | Expected: -1686 | Got: -1771158
+#   ACC FAIL PE[12] | Expected: 4830 | Got: 1839838
+#   ACC FAIL PE[13] | Expected: 1934 | Got: -2095218
+#   ACC FAIL PE[14] | Expected: 2892 | Got: 1968972
+#   ACC FAIL PE[15] | Expected: 1604 | Got: -1964476
+#   ACC FAIL PE[16] | Expected: 2802 | Got: 1903346
+#   ACC FAIL PE[17] | Expected: 3356 | Got: 1772828
+#   ACC FAIL PE[18] | Expected: -459 | Got: -1835467
+#   ACC FAIL PE[19] | Expected: -4407 | Got: -1839415
+#   ACC FAIL PE[20] | Expected: 3847 | Got: 1707783
+#   ACC FAIL PE[21] | Expected: -1038 | Got: -2032654
+#   ACC FAIL PE[22] | Expected: -9846 | Got: -1648246
+#   ACC FAIL PE[23] | Expected: -3286 | Got: -1772758
+#   ACC FAIL PE[24] | Expected: -1417 | Got: 2030199
+#   ACC FAIL PE[25] | Expected: 3351 | Got: 1969431
+#   ACC FAIL PE[26] | Expected: 2098 | Got: 1837106
+#   ACC FAIL PE[27] | Expected: -3023 | Got: -1838031
+#   ACC FAIL PE[28] | Expected: 9422 | Got: 1254606
+#   ACC FAIL PE[29] | Expected: -424 | Got: 2096728
+#   ACC FAIL PE[30] | Expected: 2032 | Got: -2095120
+#   ACC FAIL PE[31] | Expected: -2955 | Got: -1903499
+#   ACC FAIL PE[32] | Expected: 2643 | Got: 1837651
+#   ACC FAIL PE[33] | Expected: -8248 | Got: -1581112
+#   ACC FAIL PE[34] | Expected: -7266 | Got: -1645666
+#   ACC FAIL PE[35] | Expected: 5385 | Got: 1709321
+#   ACC FAIL PE[36] | Expected: -1223 | Got: -1770695
+#   ACC FAIL PE[37] | Expected: -2948 | Got: -1969028
+#   ACC FAIL PE[38] | Expected: -2149 | Got: -1968229
+#   ACC FAIL PE[39] | Expected: -1041 | Got: -2032657
+#   ACC FAIL PE[40] | Expected: -1532 | Got: 2095620
+#   ACC FAIL PE[41] | Expected: 4501 | Got: 1905045
+#   ACC FAIL PE[42] | Expected: 1642 | Got: 1902186
+#   ACC FAIL PE[43] | Expected: -5112 | Got: -1971192
+#   ACC FAIL PE[44] | Expected: 1493 | Got: 1967573
+#   ACC FAIL PE[45] | Expected: -1725 | Got: 2095427
+#   ACC FAIL PE[46] | Expected: 887 | Got: 1835895
+#   ACC FAIL PE[47] | Expected: 1102 | Got: 1967182
+#   ACC FAIL PE[48] | Expected: 530 | Got: -2096622
+#   ACC FAIL PE[49] | Expected: 4921 | Got: 1905465
+#   ACC FAIL PE[50] | Expected: 3603 | Got: 1904147
+#   ACC FAIL PE[51] | Expected: -7808 | Got: -1384064
+#   ACC FAIL PE[52] | Expected: -6037 | Got: -1644437
+#   ACC FAIL PE[53] | Expected: 3382 | Got: 1641782
+#   ACC FAIL PE[54] | Expected: -4095 | Got: -1773567
+#   ACC FAIL PE[55] | Expected: -4529 | Got: -1839537
+#   ACC FAIL PE[56] | Expected: 3862 | Got: 1904406
+#   ACC FAIL PE[57] | Expected: -1547 | Got: -1902091
+#   ACC FAIL PE[58] | Expected: 1212 | Got: -2095940
+#   ACC FAIL PE[59] | Expected: -3966 | Got: -1970046
+#   ACC FAIL PE[60] | Expected: 3623 | Got: 2035239
+#   ACC FAIL PE[61] | Expected: 2999 | Got: 1772471
+#   ACC FAIL PE[62] | Expected: 2287 | Got: 1837295
+#   ACC FAIL PE[63] | Expected: 5442 | Got: 1971522
+# 
+# ----- Requant Check (tolerance +/-1) -----
+#   RQ  PASS PE[0] | Value: 32767
+#   RQ  FAIL PE[1] | Expected: 18912, Got: 32767
+#   RQ  PASS PE[2] | Value: 32767
+#   RQ  FAIL PE[3] | Expected: 32767, Got: -32767
+#   RQ  FAIL PE[4] | Expected: 13920, Got: -32767
+#   RQ  FAIL PE[5] | Expected: -32767, Got: 32767
+#   RQ  PASS PE[6] | Value: -32767
+#   RQ  FAIL PE[7] | Expected: -32767, Got: 32767
+#   RQ  PASS PE[8] | Value: -32767
+#   RQ  FAIL PE[9] | Expected: -32767, Got: 32767
+#   RQ  FAIL PE[10] | Expected: -32767, Got: 32767
+#   RQ  PASS PE[11] | Value: -32767
+#   RQ  PASS PE[12] | Value: 32767
+#   RQ  FAIL PE[13] | Expected: 32767, Got: -32767
+#   RQ  FAIL PE[14] | Expected: 32767, Got: -32767
+#   RQ  FAIL PE[15] | Expected: 32767, Got: -32767
+#   RQ  PASS PE[16] | Value: 32767
+#   RQ  PASS PE[17] | Value: 32767
+#   RQ  FAIL PE[18] | Expected: -14688, Got: -32767
+#   RQ  PASS PE[19] | Value: -32767
+#   RQ  PASS PE[20] | Value: 32767
+#   RQ  FAIL PE[21] | Expected: -32767, Got: 32767
+#   RQ  FAIL PE[22] | Expected: -32767, Got: 32767
+#   RQ  PASS PE[23] | Value: -32767
+#   RQ  PASS PE[24] | Value: -32767
+#   RQ  FAIL PE[25] | Expected: 32767, Got: -32767
+#   RQ  PASS PE[26] | Value: 32767
+#   RQ  FAIL PE[27] | Expected: -32767, Got: 32767
+#   RQ  PASS PE[28] | Value: 32767
+#   RQ  FAIL PE[29] | Expected: -13568, Got: 32767
+#   RQ  FAIL PE[30] | Expected: 32767, Got: -32767
+#   RQ  FAIL PE[31] | Expected: -32767, Got: 32767
+#   RQ  PASS PE[32] | Value: 32767
+#   RQ  FAIL PE[33] | Expected: -32767, Got: 32767
+#   RQ  FAIL PE[34] | Expected: -32767, Got: 32767
+#   RQ  PASS PE[35] | Value: 32767
+#   RQ  PASS PE[36] | Value: -32767
+#   RQ  FAIL PE[37] | Expected: -32767, Got: 32767
+#   RQ  FAIL PE[38] | Expected: -32767, Got: 32767
+#   RQ  FAIL PE[39] | Expected: -32767, Got: 32767
+#   RQ  PASS PE[40] | Value: -32767
+#   RQ  PASS PE[41] | Value: 32767
+#   RQ  FAIL PE[42] | Expected: 32767, Got: -32767
+#   RQ  FAIL PE[43] | Expected: -32767, Got: 32767
+#   RQ  PASS PE[44] | Value: 32767
+#   RQ  PASS PE[45] | Value: -32767
+#   RQ  FAIL PE[46] | Expected: 28384, Got: -32767
+#   RQ  FAIL PE[47] | Expected: 32767, Got: -32767
+#   RQ  FAIL PE[48] | Expected: 16960, Got: -32767
+#   RQ  PASS PE[49] | Value: 32767
+#   RQ  PASS PE[50] | Value: 32767
+#   RQ  PASS PE[51] | Value: -32767
+#   RQ  FAIL PE[52] | Expected: -32767, Got: 32767
+#   RQ  FAIL PE[53] | Expected: 32767, Got: -32767
+#   RQ  FAIL PE[54] | Expected: -32767, Got: 32767
+#   RQ  PASS PE[55] | Value: -32767
+#   RQ  FAIL PE[56] | Expected: 32767, Got: -32767
+#   RQ  FAIL PE[57] | Expected: -32767, Got: 32767
+#   RQ  PASS PE[58] | Value: 32767
+#   RQ  FAIL PE[59] | Expected: -32767, Got: 32767
+#   RQ  FAIL PE[60] | Expected: 32767, Got: -32767
+#   RQ  FAIL PE[61] | Expected: 32767, Got: -32767
+#   RQ  FAIL PE[62] | Expected: 32767, Got: -32767
+#   RQ  FAIL PE[63] | Expected: 32767, Got: -32767
+# 
+# =========================================================
+#  RESULTS SUMMARY
+# ---------------------------------------------------------
+#  Total Cycles:       457
+#  Accumulator Errors:  64 / 64
+#  Requant Errors:      38 / 64
+# ---------------------------------------------------------
+#  TEST FAILED
+# =========================================================
+# ** Note: $stop    : tb_layer.sv(317)
+#    Time: 4685 ns  Iteration: 1  Instance: /tb_layer
+# Break in Module tb_layer at tb_layer.sv line 317
+# 0 ps
+# 4919250 ps
+vlog -sv layer.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:04:30 on Mar 11,2026
+# vlog -reportprogress 300 -sv layer.sv 
+# -- Compiling module layer
+# 
+# Top level modules:
+# 	layer
+# End time: 09:04:30 on Mar 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do run_layer.do
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:04:32 on Mar 11,2026
+# vlog -reportprogress 300 -sv pe_quad.sv 
+# -- Compiling module pe_quad
+# 
+# Top level modules:
+# 	pe_quad
+# End time: 09:04:32 on Mar 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:04:32 on Mar 11,2026
+# vlog -reportprogress 300 -sv layer.sv 
+# -- Compiling module layer
+# 
+# Top level modules:
+# 	layer
+# End time: 09:04:32 on Mar 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:04:32 on Mar 11,2026
+# vlog -reportprogress 300 -sv tb_layer.sv 
+# -- Compiling module tb_layer
+# 
+# Top level modules:
+# 	tb_layer
+# End time: 09:04:32 on Mar 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 09:04:34 on Mar 11,2026, Elapsed time: 0:12:36
+# Errors: 64, Warnings: 2
+# vsim -suppress 2685,3722 -voptargs="+acc" -L altera_mf_ver -L lpm_ver work.tb_layer 
+# Start time: 09:04:34 on Mar 11,2026
+# Loading sv_std.std
+# Loading work.tb_layer
+# Loading work.layer
+# Loading altera_mf_ver.altsyncram
+# Loading work.pe_quad
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: gemma  Hostname: ZEUS  ProcessID: 16120
+#           Attempting to use alternate WLF file "./wlftsg8tkg".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftsg8tkg
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[0].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[1].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[2].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[3].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[4].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[5].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[6].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[7].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[8].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[9].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[10].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[11].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[12].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[13].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[14].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[15].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[16].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[17].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[18].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[19].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[20].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[21].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[22].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[23].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[24].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[25].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[26].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[27].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[28].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[29].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[30].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[31].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[32].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[33].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[34].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[35].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[36].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[37].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[38].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[39].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[40].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[41].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[42].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[43].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[44].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[45].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[46].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[47].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[48].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[49].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[50].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[51].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[52].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[53].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[54].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[55].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[56].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[57].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[58].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[59].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[60].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[61].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[62].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[63].mif_sel.weight_ram.m_default.altsyncram_inst
+# =========================================================
+#  Chebyshev Layer Testbench
+# ---------------------------------------------------------
+#  NUM_INPUTS  = 64
+#  NUM_OUTPUTS = 64
+#  DEGREE      = 3
+#  REQUANT_SHIFT = 5
+#  TESTCASE_DIR  = testcase_64x64
+# =========================================================
+# 
+# ----- Accumulator Check (exact) -----
+#   ACC PASS PE[0] | Value: 5533
+#   ACC PASS PE[1] | Value: 591
+#   ACC PASS PE[2] | Value: 2751
+#   ACC PASS PE[3] | Value: 1673
+#   ACC PASS PE[4] | Value: 435
+#   ACC PASS PE[5] | Value: -1723
+#   ACC PASS PE[6] | Value: -2006
+#   ACC PASS PE[7] | Value: -6314
+#   ACC PASS PE[8] | Value: -2014
+#   ACC PASS PE[9] | Value: -2340
+#   ACC PASS PE[10] | Value: -6100
+#   ACC PASS PE[11] | Value: -1686
+#   ACC PASS PE[12] | Value: 4830
+#   ACC PASS PE[13] | Value: 1934
+#   ACC PASS PE[14] | Value: 2892
+#   ACC PASS PE[15] | Value: 1604
+#   ACC PASS PE[16] | Value: 2802
+#   ACC PASS PE[17] | Value: 3356
+#   ACC PASS PE[18] | Value: -459
+#   ACC PASS PE[19] | Value: -4407
+#   ACC PASS PE[20] | Value: 3847
+#   ACC PASS PE[21] | Value: -1038
+#   ACC PASS PE[22] | Value: -9846
+#   ACC PASS PE[23] | Value: -3286
+#   ACC PASS PE[24] | Value: -1417
+#   ACC PASS PE[25] | Value: 3351
+#   ACC PASS PE[26] | Value: 2098
+#   ACC PASS PE[27] | Value: -3023
+#   ACC PASS PE[28] | Value: 9422
+#   ACC PASS PE[29] | Value: -424
+#   ACC PASS PE[30] | Value: 2032
+#   ACC PASS PE[31] | Value: -2955
+#   ACC PASS PE[32] | Value: 2643
+#   ACC PASS PE[33] | Value: -8248
+#   ACC PASS PE[34] | Value: -7266
+#   ACC PASS PE[35] | Value: 5385
+#   ACC PASS PE[36] | Value: -1223
+#   ACC PASS PE[37] | Value: -2948
+#   ACC PASS PE[38] | Value: -2149
+#   ACC PASS PE[39] | Value: -1041
+#   ACC PASS PE[40] | Value: -1532
+#   ACC PASS PE[41] | Value: 4501
+#   ACC PASS PE[42] | Value: 1642
+#   ACC PASS PE[43] | Value: -5112
+#   ACC PASS PE[44] | Value: 1493
+#   ACC PASS PE[45] | Value: -1725
+#   ACC PASS PE[46] | Value: 887
+#   ACC PASS PE[47] | Value: 1102
+#   ACC PASS PE[48] | Value: 530
+#   ACC PASS PE[49] | Value: 4921
+#   ACC PASS PE[50] | Value: 3603
+#   ACC PASS PE[51] | Value: -7808
+#   ACC PASS PE[52] | Value: -6037
+#   ACC PASS PE[53] | Value: 3382
+#   ACC PASS PE[54] | Value: -4095
+#   ACC PASS PE[55] | Value: -4529
+#   ACC PASS PE[56] | Value: 3862
+#   ACC PASS PE[57] | Value: -1547
+#   ACC PASS PE[58] | Value: 1212
+#   ACC PASS PE[59] | Value: -3966
+#   ACC PASS PE[60] | Value: 3623
+#   ACC PASS PE[61] | Value: 2999
+#   ACC PASS PE[62] | Value: 2287
+#   ACC PASS PE[63] | Value: 5442
+# 
+# ----- Requant Check (tolerance +/-1) -----
+#   RQ  PASS PE[0] | Value: 32767
+#   RQ  FAIL PE[1] | Expected: 18912, Got: 7701
+#   RQ  FAIL PE[2] | Expected: 32767, Got: -6018
+#   RQ  FAIL PE[3] | Expected: 32767, Got: -2562
+#   RQ  FAIL PE[4] | Expected: 13920, Got: -300
+#   RQ  FAIL PE[5] | Expected: -32767, Got: 8022
+#   RQ  FAIL PE[6] | Expected: -32767, Got: -4201
+#   RQ  FAIL PE[7] | Expected: -32767, Got: 32767
+#   RQ  FAIL PE[8] | Expected: -32767, Got: -2707
+#   RQ  FAIL PE[9] | Expected: -32767, Got: 5923
+#   RQ  FAIL PE[10] | Expected: -32767, Got: 11818
+#   RQ  FAIL PE[11] | Expected: -32767, Got: -18968
+#   RQ  FAIL PE[12] | Expected: 32767, Got: 11622
+#   RQ  FAIL PE[13] | Expected: 32767, Got: 22059
+#   RQ  FAIL PE[14] | Expected: 32767, Got: -32767
+#   RQ  FAIL PE[15] | Expected: 32767, Got: 8771
+#   RQ  PASS PE[16] | Value: 32767
+#   RQ  FAIL PE[17] | Expected: 32767, Got: 22548
+#   RQ  FAIL PE[18] | Expected: -14688, Got: -4088
+#   RQ  PASS PE[19] | Value: -32767
+#   RQ  FAIL PE[20] | Expected: 32767, Got: 23322
+#   RQ  FAIL PE[21] | Expected: -32767, Got: 64
+#   RQ  FAIL PE[22] | Expected: -32767, Got: 32767
+#   RQ  PASS PE[23] | Value: -32767
+#   RQ  FAIL PE[24] | Expected: -32767, Got: 20590
+#   RQ  FAIL PE[25] | Expected: 32767, Got: -32767
+#   RQ  FAIL PE[26] | Expected: 32767, Got: 14751
+#   RQ  FAIL PE[27] | Expected: -32767, Got: 32767
+#   RQ  FAIL PE[28] | Expected: 32767, Got: 294
+#   RQ  FAIL PE[29] | Expected: -13568, Got: -583
+#   RQ  FAIL PE[30] | Expected: 32767, Got: 12382
+#   RQ  FAIL PE[31] | Expected: -32767, Got: 32767
+#   RQ  FAIL PE[32] | Expected: 32767, Got: 19987
+#   RQ  FAIL PE[33] | Expected: -32767, Got: 15980
+#   RQ  FAIL PE[34] | Expected: -32767, Got: 32767
+#   RQ  FAIL PE[35] | Expected: 32767, Got: 31300
+#   RQ  FAIL PE[36] | Expected: -32767, Got: -16740
+#   RQ  FAIL PE[37] | Expected: -32767, Got: 27176
+#   RQ  FAIL PE[38] | Expected: -32767, Got: 14304
+#   RQ  FAIL PE[39] | Expected: -32767, Got: 10637
+#   RQ  FAIL PE[40] | Expected: -32767, Got: 22740
+#   RQ  PASS PE[41] | Value: 32767
+#   RQ  FAIL PE[42] | Expected: 32767, Got: -13855
+#   RQ  FAIL PE[43] | Expected: -32767, Got: 13898
+#   RQ  FAIL PE[44] | Expected: 32767, Got: 6438
+#   RQ  FAIL PE[45] | Expected: -32767, Got: 7277
+#   RQ  FAIL PE[46] | Expected: 28384, Got: -13167
+#   RQ  FAIL PE[47] | Expected: 32767, Got: -2480
+#   RQ  FAIL PE[48] | Expected: 16960, Got: 6509
+#   RQ  PASS PE[49] | Value: 32767
+#   RQ  FAIL PE[50] | Expected: 32767, Got: 23869
+#   RQ  PASS PE[51] | Value: -32767
+#   RQ  FAIL PE[52] | Expected: -32767, Got: 29996
+#   RQ  FAIL PE[53] | Expected: 32767, Got: -32767
+#   RQ  FAIL PE[54] | Expected: -32767, Got: 20347
+#   RQ  FAIL PE[55] | Expected: -32767, Got: -9058
+#   RQ  FAIL PE[56] | Expected: 32767, Got: -32767
+#   RQ  FAIL PE[57] | Expected: -32767, Got: 21899
+#   RQ  FAIL PE[58] | Expected: 32767, Got: -5379
+#   RQ  FAIL PE[59] | Expected: -32767, Got: 32767
+#   RQ  FAIL PE[60] | Expected: 32767, Got: -7926
+#   RQ  FAIL PE[61] | Expected: 32767, Got: -8341
+#   RQ  FAIL PE[62] | Expected: 32767, Got: -25300
+#   RQ  FAIL PE[63] | Expected: 32767, Got: -32767
+# 
+# =========================================================
+#  RESULTS SUMMARY
+# ---------------------------------------------------------
+#  Total Cycles:       457
+#  Accumulator Errors:  0 / 64
+#  Requant Errors:      57 / 64
+# ---------------------------------------------------------
+#  TEST FAILED
+# =========================================================
+# ** Note: $stop    : tb_layer.sv(317)
+#    Time: 4685 ns  Iteration: 1  Instance: /tb_layer
+# Break in Module tb_layer at tb_layer.sv line 317
+# 0 ps
+# 4919250 ps
+vlog -sv layer.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:07:56 on Mar 11,2026
+# vlog -reportprogress 300 -sv layer.sv 
+# -- Compiling module layer
+# 
+# Top level modules:
+# 	layer
+# End time: 09:07:56 on Mar 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do run_layer.do
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:07:58 on Mar 11,2026
+# vlog -reportprogress 300 -sv pe_quad.sv 
+# -- Compiling module pe_quad
+# 
+# Top level modules:
+# 	pe_quad
+# End time: 09:07:58 on Mar 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:07:58 on Mar 11,2026
+# vlog -reportprogress 300 -sv layer.sv 
+# -- Compiling module layer
+# 
+# Top level modules:
+# 	layer
+# End time: 09:07:58 on Mar 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:07:58 on Mar 11,2026
+# vlog -reportprogress 300 -sv tb_layer.sv 
+# -- Compiling module tb_layer
+# 
+# Top level modules:
+# 	tb_layer
+# End time: 09:07:58 on Mar 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 09:08:00 on Mar 11,2026, Elapsed time: 0:03:26
+# Errors: 0, Warnings: 2
+# vsim -suppress 2685,3722 -voptargs="+acc" -L altera_mf_ver -L lpm_ver work.tb_layer 
+# Start time: 09:08:00 on Mar 11,2026
+# Loading sv_std.std
+# Loading work.tb_layer
+# Loading work.layer
+# Loading altera_mf_ver.altsyncram
+# Loading work.pe_quad
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: gemma  Hostname: ZEUS  ProcessID: 16120
+#           Attempting to use alternate WLF file "./wlftrg50j0".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftrg50j0
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[0].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[1].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[2].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[3].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[4].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[5].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[6].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[7].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[8].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[9].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[10].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[11].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[12].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[13].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[14].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[15].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[16].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[17].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[18].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[19].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[20].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[21].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[22].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[23].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[24].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[25].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[26].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[27].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[28].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[29].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[30].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[31].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[32].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[33].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[34].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[35].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[36].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[37].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[38].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[39].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[40].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[41].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[42].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[43].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[44].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[45].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[46].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[47].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[48].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[49].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[50].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[51].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[52].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[53].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[54].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[55].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[56].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[57].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[58].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[59].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[60].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[61].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[62].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[63].mif_sel.weight_ram.m_default.altsyncram_inst
+# =========================================================
+#  Chebyshev Layer Testbench
+# ---------------------------------------------------------
+#  NUM_INPUTS  = 64
+#  NUM_OUTPUTS = 64
+#  DEGREE      = 3
+#  REQUANT_SHIFT = 5
+#  TESTCASE_DIR  = testcase_64x64
+# =========================================================
+# 
+# ----- Accumulator Check (exact) -----
+#   ACC PASS PE[0] | Value: 5533
+#   ACC PASS PE[1] | Value: 591
+#   ACC PASS PE[2] | Value: 2751
+#   ACC PASS PE[3] | Value: 1673
+#   ACC PASS PE[4] | Value: 435
+#   ACC PASS PE[5] | Value: -1723
+#   ACC PASS PE[6] | Value: -2006
+#   ACC PASS PE[7] | Value: -6314
+#   ACC PASS PE[8] | Value: -2014
+#   ACC PASS PE[9] | Value: -2340
+#   ACC PASS PE[10] | Value: -6100
+#   ACC PASS PE[11] | Value: -1686
+#   ACC PASS PE[12] | Value: 4830
+#   ACC PASS PE[13] | Value: 1934
+#   ACC PASS PE[14] | Value: 2892
+#   ACC PASS PE[15] | Value: 1604
+#   ACC PASS PE[16] | Value: 2802
+#   ACC PASS PE[17] | Value: 3356
+#   ACC PASS PE[18] | Value: -459
+#   ACC PASS PE[19] | Value: -4407
+#   ACC PASS PE[20] | Value: 3847
+#   ACC PASS PE[21] | Value: -1038
+#   ACC PASS PE[22] | Value: -9846
+#   ACC PASS PE[23] | Value: -3286
+#   ACC PASS PE[24] | Value: -1417
+#   ACC PASS PE[25] | Value: 3351
+#   ACC PASS PE[26] | Value: 2098
+#   ACC PASS PE[27] | Value: -3023
+#   ACC PASS PE[28] | Value: 9422
+#   ACC PASS PE[29] | Value: -424
+#   ACC PASS PE[30] | Value: 2032
+#   ACC PASS PE[31] | Value: -2955
+#   ACC PASS PE[32] | Value: 2643
+#   ACC PASS PE[33] | Value: -8248
+#   ACC PASS PE[34] | Value: -7266
+#   ACC PASS PE[35] | Value: 5385
+#   ACC PASS PE[36] | Value: -1223
+#   ACC PASS PE[37] | Value: -2948
+#   ACC PASS PE[38] | Value: -2149
+#   ACC PASS PE[39] | Value: -1041
+#   ACC PASS PE[40] | Value: -1532
+#   ACC PASS PE[41] | Value: 4501
+#   ACC PASS PE[42] | Value: 1642
+#   ACC PASS PE[43] | Value: -5112
+#   ACC PASS PE[44] | Value: 1493
+#   ACC PASS PE[45] | Value: -1725
+#   ACC PASS PE[46] | Value: 887
+#   ACC PASS PE[47] | Value: 1102
+#   ACC PASS PE[48] | Value: 530
+#   ACC PASS PE[49] | Value: 4921
+#   ACC PASS PE[50] | Value: 3603
+#   ACC PASS PE[51] | Value: -7808
+#   ACC PASS PE[52] | Value: -6037
+#   ACC PASS PE[53] | Value: 3382
+#   ACC PASS PE[54] | Value: -4095
+#   ACC PASS PE[55] | Value: -4529
+#   ACC PASS PE[56] | Value: 3862
+#   ACC PASS PE[57] | Value: -1547
+#   ACC PASS PE[58] | Value: 1212
+#   ACC PASS PE[59] | Value: -3966
+#   ACC PASS PE[60] | Value: 3623
+#   ACC PASS PE[61] | Value: 2999
+#   ACC PASS PE[62] | Value: 2287
+#   ACC PASS PE[63] | Value: 5442
+# 
+# ----- Requant Check (tolerance +/-1) -----
+#   RQ  PASS PE[0] | Value: 32767
+#   RQ  PASS PE[1] | Value: 18912
+#   RQ  PASS PE[2] | Value: 32767
+#   RQ  PASS PE[3] | Value: 32767
+#   RQ  PASS PE[4] | Value: 13920
+#   RQ  PASS PE[5] | Value: -32767
+#   RQ  PASS PE[6] | Value: -32767
+#   RQ  PASS PE[7] | Value: -32767
+#   RQ  PASS PE[8] | Value: -32767
+#   RQ  PASS PE[9] | Value: -32767
+#   RQ  PASS PE[10] | Value: -32767
+#   RQ  PASS PE[11] | Value: -32767
+#   RQ  PASS PE[12] | Value: 32767
+#   RQ  PASS PE[13] | Value: 32767
+#   RQ  PASS PE[14] | Value: 32767
+#   RQ  PASS PE[15] | Value: 32767
+#   RQ  PASS PE[16] | Value: 32767
+#   RQ  PASS PE[17] | Value: 32767
+#   RQ  PASS PE[18] | Value: -14688
+#   RQ  PASS PE[19] | Value: -32767
+#   RQ  PASS PE[20] | Value: 32767
+#   RQ  PASS PE[21] | Value: -32767
+#   RQ  PASS PE[22] | Value: -32767
+#   RQ  PASS PE[23] | Value: -32767
+#   RQ  PASS PE[24] | Value: -32767
+#   RQ  PASS PE[25] | Value: 32767
+#   RQ  PASS PE[26] | Value: 32767
+#   RQ  PASS PE[27] | Value: -32767
+#   RQ  PASS PE[28] | Value: 32767
+#   RQ  PASS PE[29] | Value: -13568
+#   RQ  PASS PE[30] | Value: 32767
+#   RQ  PASS PE[31] | Value: -32767
+#   RQ  PASS PE[32] | Value: 32767
+#   RQ  PASS PE[33] | Value: -32767
+#   RQ  PASS PE[34] | Value: -32767
+#   RQ  PASS PE[35] | Value: 32767
+#   RQ  PASS PE[36] | Value: -32767
+#   RQ  PASS PE[37] | Value: -32767
+#   RQ  PASS PE[38] | Value: -32767
+#   RQ  PASS PE[39] | Value: -32767
+#   RQ  PASS PE[40] | Value: -32767
+#   RQ  PASS PE[41] | Value: 32767
+#   RQ  PASS PE[42] | Value: 32767
+#   RQ  PASS PE[43] | Value: -32767
+#   RQ  PASS PE[44] | Value: 32767
+#   RQ  PASS PE[45] | Value: -32767
+#   RQ  PASS PE[46] | Value: 28384
+#   RQ  PASS PE[47] | Value: 32767
+#   RQ  PASS PE[48] | Value: 16960
+#   RQ  PASS PE[49] | Value: 32767
+#   RQ  PASS PE[50] | Value: 32767
+#   RQ  PASS PE[51] | Value: -32767
+#   RQ  PASS PE[52] | Value: -32767
+#   RQ  PASS PE[53] | Value: 32767
+#   RQ  PASS PE[54] | Value: -32767
+#   RQ  PASS PE[55] | Value: -32767
+#   RQ  PASS PE[56] | Value: 32767
+#   RQ  PASS PE[57] | Value: -32767
+#   RQ  PASS PE[58] | Value: 32767
+#   RQ  PASS PE[59] | Value: -32767
+#   RQ  PASS PE[60] | Value: 32767
+#   RQ  PASS PE[61] | Value: 32767
+#   RQ  PASS PE[62] | Value: 32767
+#   RQ  PASS PE[63] | Value: 32767
+# 
+# =========================================================
+#  RESULTS SUMMARY
+# ---------------------------------------------------------
+#  Total Cycles:       457
+#  Accumulator Errors:  0 / 64
+#  Requant Errors:      0 / 64
+# ---------------------------------------------------------
+#  TEST PASSED
+# =========================================================
+# ** Note: $stop    : tb_layer.sv(317)
+#    Time: 4685 ns  Iteration: 1  Instance: /tb_layer
+# Break in Module tb_layer at tb_layer.sv line 317
+# 0 ps
+# 4919250 ps
+vlog -sv layer.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:20:02 on Mar 11,2026
+# vlog -reportprogress 300 -sv layer.sv 
+# -- Compiling module layer
+# 
+# Top level modules:
+# 	layer
+# End time: 09:20:02 on Mar 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do run_layer.do
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:20:12 on Mar 11,2026
+# vlog -reportprogress 300 -sv pe_quad.sv 
+# -- Compiling module pe_quad
+# 
+# Top level modules:
+# 	pe_quad
+# End time: 09:20:12 on Mar 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:20:12 on Mar 11,2026
+# vlog -reportprogress 300 -sv layer.sv 
+# -- Compiling module layer
+# 
+# Top level modules:
+# 	layer
+# End time: 09:20:12 on Mar 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:20:13 on Mar 11,2026
+# vlog -reportprogress 300 -sv tb_layer.sv 
+# -- Compiling module tb_layer
+# 
+# Top level modules:
+# 	tb_layer
+# End time: 09:20:13 on Mar 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 09:20:15 on Mar 11,2026, Elapsed time: 0:12:15
+# Errors: 0, Warnings: 2
+# vsim -suppress 2685,3722 -voptargs="+acc" -L altera_mf_ver -L lpm_ver work.tb_layer 
+# Start time: 09:20:15 on Mar 11,2026
+# Loading sv_std.std
+# Loading work.tb_layer
+# Loading work.layer
+# Loading altera_mf_ver.altsyncram
+# Loading work.pe_quad
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: gemma  Hostname: ZEUS  ProcessID: 16120
+#           Attempting to use alternate WLF file "./wlft35einr".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft35einr
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[0].mif_sel.weight_ram.m_default.altsyncram_inst
+# ** Warning: (vsim-PLI-3412) Memory address read on line 129 of file "mem_init/weights_pe_0.ver" is out of bounds specified for readmem command.  (Current address [64], address range [0:63])    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(48977)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[0]/mif_sel/weight_ram/m_default/altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[1].mif_sel.weight_ram.m_default.altsyncram_inst
+# ** Warning: (vsim-PLI-3412) Memory address read on line 129 of file "mem_init/weights_pe_1.ver" is out of bounds specified for readmem command.  (Current address [64], address range [0:63])    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(48977)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[1]/mif_sel/weight_ram/m_default/altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[2].mif_sel.weight_ram.m_default.altsyncram_inst
+# ** Warning: (vsim-PLI-3412) Memory address read on line 129 of file "mem_init/weights_pe_2.ver" is out of bounds specified for readmem command.  (Current address [64], address range [0:63])    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(48977)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[2]/mif_sel/weight_ram/m_default/altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[3].mif_sel.weight_ram.m_default.altsyncram_inst
+# ** Warning: (vsim-PLI-3412) Memory address read on line 129 of file "mem_init/weights_pe_3.ver" is out of bounds specified for readmem command.  (Current address [64], address range [0:63])    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(48977)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[3]/mif_sel/weight_ram/m_default/altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[4].mif_sel.weight_ram.m_default.altsyncram_inst
+# ** Warning: (vsim-PLI-3412) Memory address read on line 129 of file "mem_init/weights_pe_4.ver" is out of bounds specified for readmem command.  (Current address [64], address range [0:63])    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(48977)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[4]/mif_sel/weight_ram/m_default/altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[5].mif_sel.weight_ram.m_default.altsyncram_inst
+# ** Warning: (vsim-PLI-3412) Memory address read on line 129 of file "mem_init/weights_pe_5.ver" is out of bounds specified for readmem command.  (Current address [64], address range [0:63])    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(48977)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[5]/mif_sel/weight_ram/m_default/altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[6].mif_sel.weight_ram.m_default.altsyncram_inst
+# ** Warning: (vsim-PLI-3412) Memory address read on line 129 of file "mem_init/weights_pe_6.ver" is out of bounds specified for readmem command.  (Current address [64], address range [0:63])    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(48977)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[6]/mif_sel/weight_ram/m_default/altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[7].mif_sel.weight_ram.m_default.altsyncram_inst
+# ** Warning: (vsim-PLI-3412) Memory address read on line 129 of file "mem_init/weights_pe_7.ver" is out of bounds specified for readmem command.  (Current address [64], address range [0:63])    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(48977)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[7]/mif_sel/weight_ram/m_default/altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[8].mif_sel.weight_ram.m_default.altsyncram_inst
+# ** Warning: (vsim-PLI-3412) Memory address read on line 129 of file "mem_init/weights_pe_8.ver" is out of bounds specified for readmem command.  (Current address [64], address range [0:63])    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(48977)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[8]/mif_sel/weight_ram/m_default/altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[9].mif_sel.weight_ram.m_default.altsyncram_inst
+# ** Warning: (vsim-PLI-3412) Memory address read on line 129 of file "mem_init/weights_pe_9.ver" is out of bounds specified for readmem command.  (Current address [64], address range [0:63])    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(48977)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[9]/mif_sel/weight_ram/m_default/altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[10].mif_sel.weight_ram.m_default.altsyncram_inst
+# ** Warning: (vsim-PLI-3412) Memory address read on line 129 of file "mem_init/weights_pe_10.ver" is out of bounds specified for readmem command.  (Current address [64], address range [0:63])    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(48977)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[10]/mif_sel/weight_ram/m_default/altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[11].mif_sel.weight_ram.m_default.altsyncram_inst
+# ** Warning: (vsim-PLI-3412) Memory address read on line 129 of file "mem_init/weights_pe_11.ver" is out of bounds specified for readmem command.  (Current address [64], address range [0:63])    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(48977)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[11]/mif_sel/weight_ram/m_default/altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[12].mif_sel.weight_ram.m_default.altsyncram_inst
+# ** Warning: (vsim-PLI-3412) Memory address read on line 129 of file "mem_init/weights_pe_12.ver" is out of bounds specified for readmem command.  (Current address [64], address range [0:63])    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(48977)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[12]/mif_sel/weight_ram/m_default/altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[13].mif_sel.weight_ram.m_default.altsyncram_inst
+# ** Warning: (vsim-PLI-3412) Memory address read on line 129 of file "mem_init/weights_pe_13.ver" is out of bounds specified for readmem command.  (Current address [64], address range [0:63])    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(48977)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[13]/mif_sel/weight_ram/m_default/altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[14].mif_sel.weight_ram.m_default.altsyncram_inst
+# ** Warning: (vsim-PLI-3412) Memory address read on line 129 of file "mem_init/weights_pe_14.ver" is out of bounds specified for readmem command.  (Current address [64], address range [0:63])    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(48977)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[14]/mif_sel/weight_ram/m_default/altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[15].mif_sel.weight_ram.m_default.altsyncram_inst
+# ** Warning: (vsim-PLI-3412) Memory address read on line 129 of file "mem_init/weights_pe_15.ver" is out of bounds specified for readmem command.  (Current address [64], address range [0:63])    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(48977)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[15]/mif_sel/weight_ram/m_default/altsyncram_inst
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "experiments/quantization_results/chebyshev_testcase/layer_0_5x16/layer_inputs_s16.npy" for reading.
+# No such file or directory. (errno = ENOENT)    : tb_layer.sv(126)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer
+# ** Fatal: Could not open NPY file: experiments/quantization_results/chebyshev_testcase/layer_0_5x16/layer_inputs_s16.npy
+#    Time: 0 ps  Scope: tb_layer.load_npy_s16_1d File: tb_layer.sv Line: 127
+# ** Note: $finish    : tb_layer.sv(127)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer
+# 1
+# Break in Task load_npy_s16_1d at tb_layer.sv line 127
+# 0 ps
+# 1 ns
+do run_layer.do
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:25:56 on Mar 11,2026
+# vlog -reportprogress 300 -sv pe_quad.sv 
+# -- Compiling module pe_quad
+# 
+# Top level modules:
+# 	pe_quad
+# End time: 09:25:56 on Mar 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:25:56 on Mar 11,2026
+# vlog -reportprogress 300 -sv layer.sv 
+# -- Compiling module layer
+# 
+# Top level modules:
+# 	layer
+# End time: 09:25:56 on Mar 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:25:56 on Mar 11,2026
+# vlog -reportprogress 300 -sv tb_layer.sv 
+# -- Compiling module tb_layer
+# 
+# Top level modules:
+# 	tb_layer
+# End time: 09:25:56 on Mar 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 09:25:58 on Mar 11,2026, Elapsed time: 0:05:43
+# Errors: 1, Warnings: 19
+# vsim -suppress 2685,3722 -voptargs="+acc" -L altera_mf_ver -L lpm_ver work.tb_layer 
+# Start time: 09:25:58 on Mar 11,2026
+# Loading sv_std.std
+# Loading work.tb_layer
+# Loading work.layer
+# Loading altera_mf_ver.altsyncram
+# Loading work.pe_quad
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: gemma  Hostname: ZEUS  ProcessID: 16120
+#           Attempting to use alternate WLF file "./wlftj3tms4".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftj3tms4
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[0].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[1].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[2].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[3].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[4].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[5].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[6].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[7].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[8].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[9].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[10].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[11].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[12].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[13].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[14].mif_sel.weight_ram.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[15].mif_sel.weight_ram.m_default.altsyncram_inst
+# =========================================================
+#  Chebyshev Layer Testbench
+# ---------------------------------------------------------
+#  NUM_INPUTS  = 5
+#  NUM_OUTPUTS = 16
+#  DEGREE      = 3
+#  REQUANT_SHIFT = 5
+#  TESTCASE_DIR  = airfoil_results/layer_0_5x16
+# =========================================================
+# 
+# ----- Accumulator Check (exact) -----
+#   ACC PASS PE[0] | Value: -276
+#   ACC PASS PE[1] | Value: 405
+#   ACC PASS PE[2] | Value: 732
+#   ACC PASS PE[3] | Value: -546
+#   ACC PASS PE[4] | Value: 522
+#   ACC PASS PE[5] | Value: -500
+#   ACC PASS PE[6] | Value: 871
+#   ACC PASS PE[7] | Value: 68
+#   ACC PASS PE[8] | Value: -97
+#   ACC PASS PE[9] | Value: 82
+#   ACC PASS PE[10] | Value: -948
+#   ACC PASS PE[11] | Value: 127
+#   ACC PASS PE[12] | Value: 27
+#   ACC PASS PE[13] | Value: -931
+#   ACC PASS PE[14] | Value: 1417
+#   ACC PASS PE[15] | Value: -331
+# 
+# ----- Requant Check (tolerance +/-1) -----
+#   RQ  PASS PE[0] | Value: -8832
+#   RQ  PASS PE[1] | Value: 12960
+#   RQ  PASS PE[2] | Value: 23424
+#   RQ  PASS PE[3] | Value: -17472
+#   RQ  PASS PE[4] | Value: 16704
+#   RQ  PASS PE[5] | Value: -16000
+#   RQ  PASS PE[6] | Value: 27872
+#   RQ  PASS PE[7] | Value: 2176
+#   RQ  PASS PE[8] | Value: -3104
+#   RQ  PASS PE[9] | Value: 2624
+#   RQ  PASS PE[10] | Value: -30336
+#   RQ  PASS PE[11] | Value: 4064
+#   RQ  PASS PE[12] | Value: 864
+#   RQ  PASS PE[13] | Value: -29792
+#   RQ  PASS PE[14] | Value: 32767
+#   RQ  PASS PE[15] | Value: -10592
+# 
+# =========================================================
+#  RESULTS SUMMARY
+# ---------------------------------------------------------
+#  Total Cycles:       73
+#  Accumulator Errors:  0 / 16
+#  Requant Errors:      0 / 16
+# ---------------------------------------------------------
+#  TEST PASSED
+# =========================================================
+# ** Note: $stop    : tb_layer.sv(317)
+#    Time: 845 ns  Iteration: 1  Instance: /tb_layer
+# Break in Module tb_layer at tb_layer.sv line 317
+# 0 ps
+# 887250 ps
+do run_layer.do
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:28:09 on Mar 11,2026
+# vlog -reportprogress 300 -sv pe_quad.sv 
+# -- Compiling module pe_quad
+# 
+# Top level modules:
+# 	pe_quad
+# End time: 09:28:09 on Mar 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:28:09 on Mar 11,2026
+# vlog -reportprogress 300 -sv layer.sv 
+# -- Compiling module layer
+# 
+# Top level modules:
+# 	layer
+# End time: 09:28:09 on Mar 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:28:09 on Mar 11,2026
+# vlog -reportprogress 300 -sv tb_layer.sv 
+# -- Compiling module tb_layer
+# 
+# Top level modules:
+# 	tb_layer
+# End time: 09:28:09 on Mar 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 09:28:11 on Mar 11,2026, Elapsed time: 0:02:13
+# Errors: 0, Warnings: 2
+# vsim -suppress 2685,3722 -voptargs="+acc" -L altera_mf_ver -L lpm_ver work.tb_layer 
+# Start time: 09:28:11 on Mar 11,2026
+# Loading sv_std.std
+# Loading work.tb_layer
+# Loading work.layer
+# Loading altera_mf_ver.altsyncram
+# Loading work.pe_quad
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: gemma  Hostname: ZEUS  ProcessID: 16120
+#           Attempting to use alternate WLF file "./wlft6037rv".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft6037rv
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[0].mif_sel.weight_ram.m_default.altsyncram_inst
+# ** Warning: (vsim-PLI-3412) Memory address read on line 129 of file "mem_init/weights_pe_0.ver" is out of bounds specified for readmem command.  (Current address [64], address range [0:63])    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(48977)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[0]/mif_sel/weight_ram/m_default/altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[1].mif_sel.weight_ram.m_default.altsyncram_inst
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "mem_init/weights_pe_1.mif" for reading.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(264)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[1]/mif_sel/weight_ram/m_default/altsyncram_inst
+# ERROR: cannot read mem_init/weights_pe_1.mif.
+# ** Warning: (vsim-7) Failed to open readmem file "mem_init/weights_pe_1.ver" in read mode.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(48977)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[1]/mif_sel/weight_ram/m_default/altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[2].mif_sel.weight_ram.m_default.altsyncram_inst
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "mem_init/weights_pe_2.mif" for reading.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(264)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[2]/mif_sel/weight_ram/m_default/altsyncram_inst
+# ERROR: cannot read mem_init/weights_pe_2.mif.
+# ** Warning: (vsim-7) Failed to open readmem file "mem_init/weights_pe_2.ver" in read mode.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(48977)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[2]/mif_sel/weight_ram/m_default/altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[3].mif_sel.weight_ram.m_default.altsyncram_inst
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "mem_init/weights_pe_3.mif" for reading.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(264)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[3]/mif_sel/weight_ram/m_default/altsyncram_inst
+# ERROR: cannot read mem_init/weights_pe_3.mif.
+# ** Warning: (vsim-7) Failed to open readmem file "mem_init/weights_pe_3.ver" in read mode.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(48977)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[3]/mif_sel/weight_ram/m_default/altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[4].mif_sel.weight_ram.m_default.altsyncram_inst
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "mem_init/weights_pe_4.mif" for reading.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(264)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[4]/mif_sel/weight_ram/m_default/altsyncram_inst
+# ERROR: cannot read mem_init/weights_pe_4.mif.
+# ** Warning: (vsim-7) Failed to open readmem file "mem_init/weights_pe_4.ver" in read mode.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(48977)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[4]/mif_sel/weight_ram/m_default/altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[5].mif_sel.weight_ram.m_default.altsyncram_inst
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "mem_init/weights_pe_5.mif" for reading.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(264)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[5]/mif_sel/weight_ram/m_default/altsyncram_inst
+# ERROR: cannot read mem_init/weights_pe_5.mif.
+# ** Warning: (vsim-7) Failed to open readmem file "mem_init/weights_pe_5.ver" in read mode.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(48977)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[5]/mif_sel/weight_ram/m_default/altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[6].mif_sel.weight_ram.m_default.altsyncram_inst
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "mem_init/weights_pe_6.mif" for reading.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(264)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[6]/mif_sel/weight_ram/m_default/altsyncram_inst
+# ERROR: cannot read mem_init/weights_pe_6.mif.
+# ** Warning: (vsim-7) Failed to open readmem file "mem_init/weights_pe_6.ver" in read mode.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(48977)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[6]/mif_sel/weight_ram/m_default/altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[7].mif_sel.weight_ram.m_default.altsyncram_inst
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "mem_init/weights_pe_7.mif" for reading.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(264)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[7]/mif_sel/weight_ram/m_default/altsyncram_inst
+# ERROR: cannot read mem_init/weights_pe_7.mif.
+# ** Warning: (vsim-7) Failed to open readmem file "mem_init/weights_pe_7.ver" in read mode.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(48977)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[7]/mif_sel/weight_ram/m_default/altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[8].mif_sel.weight_ram.m_default.altsyncram_inst
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "mem_init/weights_pe_8.mif" for reading.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(264)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[8]/mif_sel/weight_ram/m_default/altsyncram_inst
+# ERROR: cannot read mem_init/weights_pe_8.mif.
+# ** Warning: (vsim-7) Failed to open readmem file "mem_init/weights_pe_8.ver" in read mode.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(48977)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[8]/mif_sel/weight_ram/m_default/altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[9].mif_sel.weight_ram.m_default.altsyncram_inst
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "mem_init/weights_pe_9.mif" for reading.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(264)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[9]/mif_sel/weight_ram/m_default/altsyncram_inst
+# ERROR: cannot read mem_init/weights_pe_9.mif.
+# ** Warning: (vsim-7) Failed to open readmem file "mem_init/weights_pe_9.ver" in read mode.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(48977)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[9]/mif_sel/weight_ram/m_default/altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[10].mif_sel.weight_ram.m_default.altsyncram_inst
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "mem_init/weights_pe_10.mif" for reading.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(264)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[10]/mif_sel/weight_ram/m_default/altsyncram_inst
+# ERROR: cannot read mem_init/weights_pe_10.mif.
+# ** Warning: (vsim-7) Failed to open readmem file "mem_init/weights_pe_10.ver" in read mode.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(48977)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[10]/mif_sel/weight_ram/m_default/altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[11].mif_sel.weight_ram.m_default.altsyncram_inst
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "mem_init/weights_pe_11.mif" for reading.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(264)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[11]/mif_sel/weight_ram/m_default/altsyncram_inst
+# ERROR: cannot read mem_init/weights_pe_11.mif.
+# ** Warning: (vsim-7) Failed to open readmem file "mem_init/weights_pe_11.ver" in read mode.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(48977)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[11]/mif_sel/weight_ram/m_default/altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[12].mif_sel.weight_ram.m_default.altsyncram_inst
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "mem_init/weights_pe_12.mif" for reading.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(264)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[12]/mif_sel/weight_ram/m_default/altsyncram_inst
+# ERROR: cannot read mem_init/weights_pe_12.mif.
+# ** Warning: (vsim-7) Failed to open readmem file "mem_init/weights_pe_12.ver" in read mode.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(48977)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[12]/mif_sel/weight_ram/m_default/altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[13].mif_sel.weight_ram.m_default.altsyncram_inst
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "mem_init/weights_pe_13.mif" for reading.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(264)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[13]/mif_sel/weight_ram/m_default/altsyncram_inst
+# ERROR: cannot read mem_init/weights_pe_13.mif.
+# ** Warning: (vsim-7) Failed to open readmem file "mem_init/weights_pe_13.ver" in read mode.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(48977)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[13]/mif_sel/weight_ram/m_default/altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[14].mif_sel.weight_ram.m_default.altsyncram_inst
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "mem_init/weights_pe_14.mif" for reading.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(264)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[14]/mif_sel/weight_ram/m_default/altsyncram_inst
+# ERROR: cannot read mem_init/weights_pe_14.mif.
+# ** Warning: (vsim-7) Failed to open readmem file "mem_init/weights_pe_14.ver" in read mode.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(48977)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[14]/mif_sel/weight_ram/m_default/altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[15].mif_sel.weight_ram.m_default.altsyncram_inst
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "mem_init/weights_pe_15.mif" for reading.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(264)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[15]/mif_sel/weight_ram/m_default/altsyncram_inst
+# ERROR: cannot read mem_init/weights_pe_15.mif.
+# ** Warning: (vsim-7) Failed to open readmem file "mem_init/weights_pe_15.ver" in read mode.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(48977)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer/dut/pes[15]/mif_sel/weight_ram/m_default/altsyncram_inst
+# ** Fatal: Input length (16) != NUM_INPUTS (5)
+#    Time: 0 ps  Scope: tb_layer File: tb_layer.sv Line: 215
+# ** Note: $finish    : tb_layer.sv(215)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_layer
+# 1
+# Break in Module tb_layer at tb_layer.sv line 215
+# 0 ps
+# 1 ns
+vlog -sv layer.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:28:51 on Mar 11,2026
+# vlog -reportprogress 300 -sv layer.sv 
+# -- Compiling module layer
+# 
+# Top level modules:
+# 	layer
+# End time: 09:28:51 on Mar 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do run_layer.do
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:28:52 on Mar 11,2026
+# vlog -reportprogress 300 -sv pe_quad.sv 
+# -- Compiling module pe_quad
+# 
+# Top level modules:
+# 	pe_quad
+# End time: 09:28:52 on Mar 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:28:52 on Mar 11,2026
+# vlog -reportprogress 300 -sv layer.sv 
+# -- Compiling module layer
+# 
+# Top level modules:
+# 	layer
+# End time: 09:28:52 on Mar 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:28:52 on Mar 11,2026
+# vlog -reportprogress 300 -sv tb_layer.sv 
+# -- Compiling module tb_layer
+# 
+# Top level modules:
+# 	tb_layer
+# End time: 09:28:52 on Mar 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 09:28:54 on Mar 11,2026, Elapsed time: 0:00:43
+# Errors: 1, Warnings: 33
+# vsim -suppress 2685,3722 -voptargs="+acc" -L altera_mf_ver -L lpm_ver work.tb_layer 
+# Start time: 09:28:54 on Mar 11,2026
+# Loading sv_std.std
+# Loading work.tb_layer
+# Loading work.layer
+# Loading altera_mf_ver.altsyncram
+# Loading work.pe_quad
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: gemma  Hostname: ZEUS  ProcessID: 16120
+#           Attempting to use alternate WLF file "./wlftc5d61a".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftc5d61a
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: tb_layer.dut.pes[0].mif_sel.weight_ram.m_default.altsyncram_inst
+# =========================================================
+#  Chebyshev Layer Testbench
+# ---------------------------------------------------------
+#  NUM_INPUTS  = 16
+#  NUM_OUTPUTS = 1
+#  DEGREE      = 3
+#  REQUANT_SHIFT = 5
+#  TESTCASE_DIR  = airfoil_results/layer_1_16x1
+# =========================================================
+# 
+# ----- Accumulator Check (exact) -----
+#   ACC PASS PE[0] | Value: -105
+# 
+# ----- Requant Check (tolerance +/-1) -----
+#   RQ  PASS PE[0] | Value: -3360
+# 
+# =========================================================
+#  RESULTS SUMMARY
+# ---------------------------------------------------------
+#  Total Cycles:       106
+#  Accumulator Errors:  0 / 1
+#  Requant Errors:      0 / 1
+# ---------------------------------------------------------
+#  TEST PASSED
+# =========================================================
+# ** Note: $stop    : tb_layer.sv(317)
+#    Time: 1175 ns  Iteration: 1  Instance: /tb_layer
+# Break in Module tb_layer at tb_layer.sv line 317
+# 0 ps
+# 1233750 ps
+# End time: 09:30:20 on Mar 11,2026, Elapsed time: 0:01:26
 # Errors: 0, Warnings: 2

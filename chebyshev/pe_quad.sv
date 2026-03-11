@@ -19,7 +19,7 @@ module pe_quad #(
     output logic signed [WIDTH-1:0] y_A, y_B, y_C, y_D
 );
 
-    logic [1:0] thread_idx; // Changed to 1:0 (Loops exactly 0 to 3)
+    logic [1:0] thread_idx;
     logic [7:0] k; 
     logic active;
 
@@ -29,7 +29,7 @@ module pe_quad #(
     // --- PIPELINE TRACKING REGISTERS ---
     logic [1:0] thread_idx_d1, thread_idx_d2, thread_idx_d3;
     logic [7:0] k_d1, k_d2, k_d3;
-    logic active_d1, active_d2, active_d3; // New Valid Pipeline
+    logic active_d1, active_d2, active_d3;
 
     logic signed [WIDTH-1:0] b_next [0:3];
     logic signed [WIDTH-1:0] b_prev [0:3];
@@ -108,7 +108,6 @@ module pe_quad #(
                 active <= 1; thread_idx <= 0; k <= DEGREE;
                 for(int i=0; i<4; i++) begin b_next[i]<=0; b_prev[i]<=0; end
             end else if (active) begin
-                // Loop 0 to 3 (Bubble entirely removed)
                 if (thread_idx == 3) begin
                     if (k == 0) begin active <= 0; end
                     else begin k <= k - 1; thread_idx <= 0; end

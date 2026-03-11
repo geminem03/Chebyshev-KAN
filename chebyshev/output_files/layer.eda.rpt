@@ -1,5 +1,5 @@
 EDA Netlist Writer report for layer
-Sun Mar 01 20:55:15 2026
+Wed Mar 11 08:34:05 2026
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sun Mar 01 20:55:15 2026 ;
+; EDA Netlist Writer Status ; Successful - Wed Mar 11 08:34:05 2026 ;
 ; Revision Name             ; layer                                 ;
 ; Top-level Entity Name     ; layer                                 ;
 ; Family                    ; Arria 10                              ;
@@ -67,13 +67,13 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+------------------------------------------------------------------+
-; Simulation Generated Files                                       ;
-+------------------------------------------------------------------+
-; Generated Files                                                  ;
-+------------------------------------------------------------------+
-; C:/Skule_Hardrive/kan-tpu/chebyshev/simulation/modelsim/layer.vo ;
-+------------------------------------------------------------------+
++------------------------------------------------------------------------+
+; Simulation Generated Files                                             ;
++------------------------------------------------------------------------+
+; Generated Files                                                        ;
++------------------------------------------------------------------------+
+; C:/Skule_Hardrive/Chebyshev-KAN/chebyshev/simulation/modelsim/layer.vo ;
++------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -82,15 +82,15 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
-    Info: Processing started: Sun Mar 01 20:55:09 2026
+    Info: Processing started: Wed Mar 11 08:33:58 2026
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off chebyshev -c layer
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Warning (10905): Generated the EDA functional simulation netlist because it is the only supported netlist type for this device.
-Info (204019): Generated file layer.vo in folder "C:/Skule_Hardrive/kan-tpu/chebyshev/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file layer.vo in folder "C:/Skule_Hardrive/Chebyshev-KAN/chebyshev/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4913 megabytes
-    Info: Processing ended: Sun Mar 01 20:55:15 2026
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:06
+    Info: Peak virtual memory: 4931 megabytes
+    Info: Processing ended: Wed Mar 11 08:34:05 2026
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:07
 
 

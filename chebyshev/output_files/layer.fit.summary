@@ -1,17 +1,17 @@
-Fitter Status : Successful - Sun Mar 01 20:53:54 2026
+Fitter Status : Successful - Wed Mar 11 08:32:30 2026
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 Revision Name : layer
 Top-level Entity Name : layer
 Family : Arria 10
 Device : 10AX115R4F40I3SG
 Timing Models : Final
-Logic utilization (in ALMs) : 12,815 / 427,200 ( 3 % )
-Total registers : 21799
+Logic utilization (in ALMs) : 14,253 / 427,200 ( 3 % )
+Total registers : 23843
 Total pins : 21 / 650 ( 3 % )
 Total virtual pins : 0
-Total block memory bits : 262,144 / 55,562,240 ( < 1 % )
+Total block memory bits : 263,168 / 55,562,240 ( < 1 % )
 Total RAM Blocks : 26 / 2,713 ( < 1 % )
-Total DSP Blocks : 64 / 1,518 ( 4 % )
+Total DSP Blocks : 65 / 1,518 ( 4 % )
 Total HSSI RX channels : 0 / 66 ( 0 % )
 Total HSSI TX channels : 0 / 66 ( 0 % )
 Total PLLs : 0 / 138 ( 0 % )

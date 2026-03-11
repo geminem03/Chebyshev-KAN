@@ -1,0 +1,7 @@
+# Generate tb_config.svh for this layer:
+python gen_tb_config.py --num_inputs 5 --num_outputs 16 --testcase_dir layer_0_5x16 --degree 3 --requant_shift 5
+
+# MIF depth = 33
+# Requant scale = 1024 (0x0400)
+# REQUANT_SHIFT = 5
+# (acc * 1024) >>> 5 = acc * 32.0
