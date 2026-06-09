@@ -61,13 +61,13 @@ The **top-level layer module** orchestrates the PEs and manages memory and accum
 
 ### 22-Bit Accumulation
 
-Hardware chunks inputs into groups of 4, streaming them to the PEs and safely summing **up to 64 Clenshaw results** into a **22-bit accumulator** to prevent integer overflow.
+Hardware chunks inputs into groups of 4, streaming them to the PEs and safely summing **up to 64 Clenshaw results** into a **25-bit accumulator** to prevent integer overflow.
 
 ### Serialized Requantization
 
 Once accumulation finishes, the layer executes a **serialized requantization phase**.
 
-It sequentially walks through the **22-bit accumulators** using a **single shared multiplier**, applying:
+It sequentially walks through the **25-bit accumulators** using a **single shared multiplier**, applying:
 
 - a **scale factor**
 - a **shift**
